@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnología</title>
+
+    <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+
+
+    <link rel="shortcut icon" href="/static/img/logo2.png" type="image/png" />
+    <!--<link rel="stylesheet" href="/static/bootstrap/css/yeti.css">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .headerTitle{
+            padding-left:1px;
+            padding-top: 50px;
+            font-family: "Oswald",sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+    </style>
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body>
+<div class="container">
+    <div class="row" STYLE="border-bottom:3px solid #FC3216; border-top: 3px solid #FC3216;">
+        <div class="col-md-9 col-sm-9">
+            <div class="row" >
+                <div class="col-md-1"></div>
+                <center><div id="ex4" class="col-md-3" style=" padding-top: 10px; padding-bottom: 5px;"><a href="/"> <img class="img-responsive" src="/static/img/logo2.png" alt=""/></a></div></center>
+                <div class="col-md-8 headerTitle visible-md visible-lg">TECNOLOGÍA CHECKLIST</div>
+                <div class="col-md-8 visible-sm visible-xs" style="text-align: center"><h1> TECNOLOGÍA CHECKLIST</h1></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% block body %}
+
+
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,195 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+
+{% endblock %}
+{% block body %}
+
+    <div class="container animated bounce bounceInDown">
+        <form action="/tareaEspecifica/" id="myForm" method="post">
+            <div class="row">
+                <br/>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="usuarioTitle">Usuario:</label>
+                        <select class="form-control" name="usuario" id="usuarioTitle">
+                            {% for i in registrosUsuarios %}
+                                <option value="{{ i.us_id}}">{{ i.us_nombre }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="fechaTitle">Fecha:</label>
+                        <input type="date" class="form-control" id="fechaTitle" name="fecha" required>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="frecuenciaTitle">Frecuencia:</label>
+                        <select class="form-control" name="frecuencia" id="frecuenciaTitle">
+                            <option value="DIARIO">DIARIO</option>
+                            <option value="SEMANAL">SEMANAL</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="tareaTitle">Tarea:</label>
+                        <select class="form-control" name="tarea" id="tareaTitle">
+                            {% for i in registrosLista %}
+                                {%  if i.li_frecuencia == "DIARIO" %}
+                                    <option value="{{ i.li_id}}">{{ i.li_nombre }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-2" style="margin-top: 25px;">
+
+                   <input type="button" class="btn btn-primary" value="&nbsp;&nbsp;&nbsp;  Empezar a Evaluar &nbsp;&nbsp;&nbsp;&nbsp;" onclick="validarDiaConUsuario()">
+
+                </div>
+                <div class="col-md-2" style="margin-top: 25px;">
+
+                    <input type="button" class="btn btn-danger" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ver Calendario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" onclick="location.href='/calendario/'">
+
+
+                </div>
+
+
+            </div>
+        </form>
+    </div><!-- fin del container-->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="estado" id="estadoID"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            webshims.setOptions('forms-ext', {types: 'date'});
+            webshims.polyfill('forms forms-ext');
+
+
+            if ($("#frecuenciaTitle").val()=="SEMANAL"){
+                var sel = document.getElementById("tareaTitle");
+                for(i=(sel.length-1); i>=0; i--)
+                {
+                    aBorrar = sel.options[i];
+                    aBorrar.parentNode.removeChild(aBorrar);
+                }
+                {% for i in registrosLista  %}
+                    {%  if i.li_frecuencia == "SEMANAL" %}
+                        var valor= "{{i.li_id|safe}}";
+                        var contenido= "{{i.li_nombre|safe}}";
+                        $("#tareaTitle").append('<option value="'+valor+'">'+contenido+'</option> ');
+                    {% endif %}
+                {% endfor %}
+            }
+            var now = new Date();
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+            $("#fechaTitle").val(today);
+
+            $("#frecuenciaTitle").change(function() {
+                var frecuencia = $("#frecuenciaTitle").val();
+
+                var sel = document.getElementById("tareaTitle");
+
+                for(i=(sel.length-1); i>=0; i--)
+                {
+                    aBorrar = sel.options[i];
+                    aBorrar.parentNode.removeChild(aBorrar);
+                }
+                if (frecuencia=="DIARIO"){
+                    {% for i in registrosLista  %}
+                        {%  if i.li_frecuencia == "DIARIO" %}
+                            var valor = "{{i.li_id|safe}}";
+                            var contenido= "{{i.li_nombre|safe}}";
+
+                            $("#tareaTitle").append('<option value="'+valor+'">'+ contenido+'</option> ');
+
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (frecuencia=="SEMANAL"){
+                    {% for i in registrosLista  %}
+                        {%  if i.li_frecuencia == "SEMANAL" %}
+                            var valor= "{{i.li_id|safe}}";
+                            var contenido= "{{i.li_nombre|safe}}";
+                            $("#tareaTitle").append('<option value="'+valor+'">'+contenido+'</option> ');
+
+                        {% endif %}
+                    {% endfor %}
+                }
+
+            });
+
+        });
+
+        function validarDiaConUsuario(){
+            var idUsuario = $("#usuarioTitle").val();
+            var fecha = $("#fechaTitle").val();
+            var form = $('#myForm');
+
+            $.ajax({
+                data : {'idUsuario':idUsuario, 'fecha':fecha},
+                url : '/validarDiaConUsuario/',
+                type : 'get',
+                success: function(data){
+                    var estado = data;
+                    var si;
+                    if (estado == "True"){
+
+                        /*document.getElementById('estadoID').innerHTML = "<h1>HOY SI LE TOCA</h1>";
+                        $('#myModal').modal('show');
+                        timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
+                        setInterval(function () {$('#pruebita').addClass('animated bounceOutLeft');}, 3000);*/
+                        form.submit();
+                    }
+                    else{
+                        document.getElementById('estadoID').innerHTML = "<h1>HOY NO LE TOCA :D</h1>";
+                        $('#myModal').modal('show')
+                        timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
+                    }
+
+                }// fin del success
+
+            }); // fin del ajax
+        }
+    </script>
+{% endblock %}

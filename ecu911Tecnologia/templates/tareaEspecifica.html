@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% block head %}
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+{% endblock %}
+{% block body %}
+    <div class="container animated zoomInDown"><!--Primer container-->
+        <div class="row"><br/>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="nombreUsuarioTitle">Nombre:</label>
+                    <input type="hidden" class="form-control" id="idUsuarioTitle" name="idUsuario" value="{{ nombreUsuario.us_id}}" readonly="true">
+                    <input type="text" class="form-control" id="nombreUsuarioTitle" name="nombreUsuario" value="{{ nombreUsuario.us_nombre }}" readonly="true">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fechaTitle">Fecha:</label>
+                    <input type="date" class="form-control" id="fechaTitle" name="fecha" value="{{ fecha }}" readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="frecuenciaTitle">Frecuencia:</label>
+                    <input type="text" class="form-control" id="frecuenciaTitle" name="frecuencia" value="{{ frecuencia }}" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="listaTitle">Lista:</label>
+                    <input type="hidden" class="form-control" id="idLista" name="idLista" value="{{ nombreLista.li_id}}" readonly="true">
+                    <input type="text" class="form-control" id="listaTitle" name="tarea" value="{{ nombreLista.li_nombre}}" readonly="true">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="descripcionTitle">Descripcion:</label>
+                    <input type="text" class="form-control" id="descripcionTitle" name="descripcion" value="{{ nombreLista.li_descripcion}}" readonly="true">
+                </div>
+            </div>
+        </div>
+    </div><!--fin del primer container-->
+
+    <div class="container animated zoomInDown">
+        <div class="row">
+            <div class="col-md-3">
+                <h3> Inspección ID: {{inspeccionGuardada.in_id }} <h3><a href="" onclick="javascript:history.back()">REGRESAR</a></h3></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container animated zoomInDown">
+        <div class="table responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="btn-primary ">
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>DESCRIPCIÓN</th>
+                <th colspan="2" style="text-align: center">CHECK</th>
+
+                <th class="col-sm-2">OBSERVACIÓN</th>
+                <th>OK</th>
+                </thead>
+                <tbody>
+                {% for registros in registrosDeEsaTarea %}
+                    <tr>
+                        <td>{{ registros.ta_id }}</td>
+                        <td>{{ registros.ta_nombre }}</td>
+                        <td>{{ registros.ta_descripcion }}</td>
+
+                        <td style="text-align: center" id="error_{{ registros.ta_id }}">
+                            <label class="radio-inline">
+                                <input type="radio" name="radio_{{ registros.ta_id }}" id="Yid_radio_{{ registros.ta_id }}" value="1"> YES
+                            </label>
+                        </td>
+                        <td style="text-align: center" id="error2_{{ registros.ta_id }}">
+                            <label class="radio-inline">
+                                <input type="radio" name="radio_{{ registros.ta_id }}" id="Nid_radio_{{ registros.ta_id }}" value="0"> NO
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="observacion_{{ registros.ta_id }}">
+                        </td>
+                        <td >
+                            <span class="btn glyphicon glyphicon-floppy-disk" style="color: #418BCA; vertical-align: baseline" aria-hidden="true" onclick="guardarDetalleInspeccion({{inspeccionGuardada.in_id }} , {{ nombreLista.li_id}}, {{ registros.ta_id }} , '{{ registros.ta_nombre }}' , '{{ registros.ta_descripcion }}' )" title="Guardar"></span>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="application/javascript">
+
+        $( document ).ready(function() {
+            {% for registros in detallesDeEsaInspeccion %}
+                {% if registros.de_resultado == 1 %}
+                    $("#error_"+{{ registros.de_id_tareas }}).css({'background-color' : 'orange'});
+                    $("#error2_"+{{ registros.de_id_tareas }}).css({'background-color' : 'orange'});
+                    $("#Yid_radio_{{ registros.de_id_tareas }}").attr('checked', true);
+                    $("#observacion_{{ registros.de_id_tareas }}").val('{{ registros.de_observacion }}');
+                {% elif registros.de_resultado == 0 %}
+                    $("#error_"+{{ registros.de_id_tareas }}).css({'background-color' : 'orange'});
+                    $("#error2_"+{{ registros.de_id_tareas }}).css({'background-color' : 'orange'});
+                    $("#Nid_radio_{{ registros.de_id_tareas }}").attr('checked', true);
+                    $("#observacion_{{ registros.de_id_tareas }}").val('{{ registros.de_observacion }}');
+                {% endif %}
+            {% endfor %}
+        });
+
+        function guardarDetalleInspeccion(idInspeccion, idLista, idTarea, detalleTarea, descripcionTarea){//, idLista, idTarea, detalleTarea, detalleDescripcion, resultado, observacion, fecha){
+            /*alert(idInspeccion);
+             alert(idLista);
+             alert(idTarea);
+             alert(detalleTarea);
+             alert(descripcionTarea);
+             alert($("input[name='radio_" +idTarea+ "']:checked").val());
+             var observacion = $("#observacion_"+idTarea).val();
+             alert(observacion);
+             alert($("#fechaTitle").val());
+             */
+            if( $("input[name='radio_" +idTarea+ "']:radio").is(':checked')) {
+                var resultado = $("input[name='radio_" +idTarea+ "']:checked").val();
+                var observacion = $("#observacion_"+idTarea).val();
+                var fecha = $("#fechaTitle").val();
+                $.ajax({
+                    data : {'idInspeccion': idInspeccion , 'idLista':idLista, 'idTarea':idTarea , 'tareaNombre':detalleTarea , 'descripcionTarea':descripcionTarea , 'resultado':resultado, 'observacion':observacion, 'fecha':fecha},
+                    url : '/guardarTareaEspecifica/',
+                    type : 'get',
+                    success: function(data){
+                        var estado = data;
+
+                        if (estado == "True"){
+                            $("#error_"+idTarea).css({'background-color' : '#52A552'});
+                            $("#error2_"+idTarea).css({'background-color' : '#52A552'});
+                        }
+                        else{
+                            $("#error_"+idTarea).css({'background-color' : '#F2DEDE'});
+                            $("#error2_"+idTarea).css({'background-color' : '#F2DEDE'});
+                        }
+
+                    }// fin del success
+
+                }); // fin del ajax
+            }else{
+                $("#error_"+idTarea).css({'background-color' : '#F2DEDE'});
+                $("#error2_"+idTarea).css({'background-color' : '#F2DEDE'});
+            }
+        }
+    </script>
+{% endblock %}
