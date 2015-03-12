@@ -175,14 +175,21 @@
                     var si;
                     if (estado == "True"){
 
+                        if($('#tareaTitle option').length==0){
+                            document.getElementById('estadoID').innerHTML = "<h1>No hay Tareas Semanales</h1>";
+                            $('#myModal').modal('show')
+                            timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
+                        }else
+                            form.submit();
+
                         /*document.getElementById('estadoID').innerHTML = "<h1>HOY SI LE TOCA</h1>";
                         $('#myModal').modal('show');
                         timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
                         setInterval(function () {$('#pruebita').addClass('animated bounceOutLeft');}, 3000);*/
-                        form.submit();
+                        //
                     }
                     else{
-                        document.getElementById('estadoID').innerHTML = "<h1>HOY NO LE TOCA :D</h1>";
+                        document.getElementById('estadoID').innerHTML = "<h1>Hoy No Le Toca</h1>";
                         $('#myModal').modal('show')
                         timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
                     }

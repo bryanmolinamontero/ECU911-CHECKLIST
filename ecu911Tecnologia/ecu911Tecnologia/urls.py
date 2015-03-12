@@ -23,7 +23,10 @@ urlpatterns = patterns('',
     url(r'guardarTareaEspecifica/$', guardarTareaEspecifica),
     url(r'validarDiaConUsuario/$', validarDiaConUsuario),
 
+    url(r'^reporte/$', reporte),
 
+    url(r'^obtenerMalas/$', obtenerMalas),
+    url(r'^obtenerBuenas/$', obtenerBuenas),
 
 )
 handler404 = 'checklist.views.handler404'

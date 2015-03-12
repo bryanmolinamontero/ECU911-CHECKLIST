@@ -1,11 +1,74 @@
 # Create your views here.
-from django.db.models.expressions import F
+from io import BytesIO
+
+
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
 from django.shortcuts import render
+from reportlab.graphics.charts.barcharts import VerticalBarChart
+from reportlab.graphics.charts.linecharts import HorizontalLineChart
+from reportlab.graphics.shapes import Drawing
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import letter, landscape
+from reportlab.lib.pagesizes import A4
+
 
 from models import *
 
+from reportlab.pdfgen import canvas
+
+from reportlab.pdfgen import canvas
+from django.http import HttpResponse
+
+def reporte(request):
+    # Create the HttpResponse object with the appropriate PDF headers.
+    response = HttpResponse(content_type='application/pdf')
+
+    response['Content-Disposition'] = 'filename="reporte.pdf"'
+    #response['Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
+
+    # Create the PDF object, using the response object as its "file."
+    p = canvas.Canvas(response,pagesize=A4)
+
+    drawing = Drawing(100, 200)
+    data = [
+    (13, 5, 20, 22, 37, 45, 19, 4),
+    (14, 6, 21, 23, 38, 46, 20, 5)
+    ]
+    bc = VerticalBarChart()
+    bc.x = 50
+    bc.y = 50
+    bc.height = 125
+    bc.width = 300
+    bc.data = data
+    bc.strokeColor = colors.black
+    bc.valueAxis.valueMin = 0
+    bc.valueAxis.valueMax = 50
+    bc.valueAxis.valueStep = 10
+    bc.categoryAxis.labels.boxAnchor = 'ne'
+    bc.categoryAxis.labels.dx = 8
+    bc.categoryAxis.labels.dy = -2
+    bc.categoryAxis.labels.angle = 30
+    bc.categoryAxis.categoryNames = ['Jan-99','Feb-99','Mar-99',
+    'Apr-99','May-99','Jun-99','Jul-99','Aug-99']
+    drawing.add(bc)
+
+    from reportlab.graphics import renderPDF
+    renderPDF.drawToFile(drawing, 'reporte.pdf', 'My First Drawing')
+
+
+
+    # Draw things on the PDF. Here's where the PDF generation happens.
+    # See the ReportLab documentation for the full list of functionality.
+    # pixeles de hoja A4 842x595
+    p.drawString(10, 10, "Hello world.")
+
+    #p.drawImage("http://mejoresimagenes.info/wp-content/uploads/2014/10/imagenes-con-frases-de-la-rana-rene.jpg",10,300)
+    # Close the PDF object cleanly, and we're done.
+
+    p.showPage()
+    p.save()
+    return response
 
 def index(request):
     #registrosUsuarios = te_usuarios.objects.all().order_by("us_id")
@@ -149,15 +212,38 @@ def validarDiaConUsuario(request):
         return HttpResponseRedirect("/tareas/")
 
 
+
 import datetime
 def calendario(request):
     registrosTurno = te_turno.objects.all()
     fechaActual = datetime.date.today()
-    print "***********"
-    print fechaActual
-    print "***********"
-
     return render_to_response('calendario.html', {"registrosTurno":registrosTurno, "fechaActual": fechaActual})
+
+
+
+def obtenerMalas(request):
+    fecha = request.GET['fecha']
+    from django.db import connection
+    cursor = connection.cursor()
+    sql = "SELECT SUM(ta_resultado_esperado <> de_resultado) FROM te_detalle_inspeccion JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado"
+    cursor.execute(sql)
+    data = cursor.fetchall()
+    return HttpResponse(data)
+
+
+def obtenerBuenas(request):
+    fecha = request.GET['fecha']
+    from django.db import connection
+    cursor = connection.cursor()
+    sql = "SELECT SUM(ta_resultado_esperado = de_resultado) FROM te_detalle_inspeccion  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado"
+    cursor.execute(sql)
+    data = cursor.fetchall()
+    return HttpResponse(data)
+
+
+
+
 
 def handler404(request):
     return render(request,'404.html')
+

@@ -40,16 +40,16 @@
                     <th>Fecha</th>
                     <th>Dia</th>
                     <th>Avance</th>
+                    <th>Malas</th>
+                    <th>Buenas</th>
 
                     </thead>
                     <tbody>
                     {% for i in registrosTurno %}
                         <tr>
-
-
                             {% if i.tu_fecha_turno == fechaActual %}
                                 <td class="diaActual">{{i.tu_nombre_usuario}}</td>
-                                <td class="diaActual">{{i.tu_fecha_turno}} </td>
+                                <td class="diaActual">{{i.tu_fecha_turno | safe}} </td>
                                 <td class="diaActual">{{i.tu_dia}}</td>
                                 {% if i.tu_avance > 99 %}
                                     <td class="diaActual">
@@ -68,11 +68,13 @@
                                         </div>
                                     </td>
                                 {% endif %}
+                                <td class="diaActual" id="mala_{{ i.tu_fecha_turno | safe }}">----</td>
+                                <td class="diaActual" id="buena_{{ i.tu_fecha_turno | safe }}">----</td>
 
 
                             {% else %}
                                 <td>{{i.tu_nombre_usuario}}</td>
-                                <td>{{i.tu_fecha_turno }}</td>
+                                <td>{{i.tu_fecha_turno | safe }}</td>
                                 <td>{{i.tu_dia}}</td>
                                 {% if i.tu_avance > 99 %}
                                     <td>
@@ -91,6 +93,9 @@
                                         </div>
                                     </td>
                                 {% endif %}
+                                <td id="mala_{{ i.tu_fecha_turno | safe }}">----</td>
+                                <td id="buena_{{ i.tu_fecha_turno | safe }}">----</td>
+
 
                             {% endif %}
 
@@ -101,6 +106,8 @@
                 </table>
             </div>
         </div>
+
+
     </div>
 {% endblock %}
 
@@ -108,36 +115,105 @@
 
 {% block js %}
     <script>
-        $(document).ready(function() {
-            $('#table_id').dataTable( {
-                "order": [],
-                "aLengthMenu": [[ 25, 50, 75, 100, -1], [ 25, 50, 75, 100, "Todos"]],
-                "language": {
-                    "sProcessing":     "Procesando...",
-                    "sLengthMenu":     "Mostrar _MENU_ registros",
-                    "sZeroRecords":    "No se encontraron resultados",
-                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
-                    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix":    "",
-                    "sSearch":         "Buscar:",
-                    "sUrl":            "",
-                    "sInfoThousands":  ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst":    "Primero",
-                        "sLast":     "Último",
-                        "sNext":     "Siguiente",
-                        "sPrevious": "Anterior"
-                    },
-                    "oAria": {
-                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
+
+        $(document).ready(function(){
+                    asignarCantidadTareasMalas();
+                    asignarCantidadTareasBuenas();
+
+                    $('#table_id').dataTable( {
+                        "order": [],
+                        "aLengthMenu": [[ 25, 50, 75, 100, -1], [ 25, 50, 75, 100, "Todos"]],
+                        "language": {
+                            "sProcessing":     "Procesando...",
+                            "sLengthMenu":     "Mostrar _MENU_ registros",
+                            "sZeroRecords":    "No se encontraron resultados",
+                            "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                            "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                            "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                            "sInfoPostFix":    "",
+                            "sSearch":         "Buscar:",
+                            "sUrl":            "",
+                            "sInfoThousands":  ",",
+                            "sLoadingRecords": "Cargando...",
+                            "oPaginate": {
+                                "sFirst":    "Primero",
+                                "sLast":     "Último",
+                                "sNext":     "Siguiente",
+                                "sPrevious": "Anterior"
+                            },
+                            "oAria": {
+                                "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                            }
+                        }
+                    } );
+
                 }
-            } );
-        } );
+        );
+
+        function asignarCantidadTareasMalas(){
+            {% for foo in registrosTurno %}
+                var now = new Date();
+                var day = ("0" + now.getDate()).slice(-2);
+                var month = ("0" + (now.getMonth() + 1)).slice(-2);
+                var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+                var fecha = "{{ foo.tu_fecha_turno | safe}}";
+                if((Date.parse(fecha)) <= (Date.parse(today))) {
+                    $.ajax({
+                        data : {'fecha':fecha},
+                        url : '/obtenerMalas/',
+                        type : 'get',
+                        success: function(data){
+                            var estado = data;
+                            var a = estado.split("'");
+                            try {
+                                document.getElementById("mala_"+'{{ foo.tu_fecha_turno | safe}}').innerHTML="<a href='javascript:mostrarMalos(\"{{ foo.tu_fecha_turno | safe}}\")'>"+ a[1]+" </a>";
+                                if (a[1] == undefined)
+                                    document.getElementById("mala_"+'{{ foo.tu_fecha_turno | safe}}').innerHTML="---";//;
+                            }
+                            catch(err) {
+                            }
+                        }// fin del success
+                    }); // fin del ajax
+                }
+            {% endfor %}
+        }// fin de asignar cantidad tareas Malas
+
+        function asignarCantidadTareasBuenas(){
+            {% for foo in registrosTurno %}
+                var now = new Date();
+                var day = ("0" + now.getDate()).slice(-2);
+                var month = ("0" + (now.getMonth() + 1)).slice(-2);
+                var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+                var fecha = "{{ foo.tu_fecha_turno | safe}}";
+                if((Date.parse(fecha)) <= (Date.parse(today))) {
+                    $.ajax({
+                        data : {'fecha':fecha},
+                        url : '/obtenerBuenas/',
+                        type : 'get',
+                        success: function(data){
+                            var estado = data;
+                            var a = estado.split("'");
+                            try {
+                                document.getElementById("buena_"+'{{ foo.tu_fecha_turno | safe}}').innerHTML=a[1];//;
+                                if (a[1] == undefined)
+                                    document.getElementById("buena_"+'{{ foo.tu_fecha_turno | safe}}').innerHTML="---";//;
+                            }
+                            catch(err) {
+                            }
+                        }// fin del success
+                    }); // fin del ajax
+                }
+            {% endfor %}
+        }// fin de asignar cantidad tareas Buenas
+
+
+    function mostrarMalos(fecha){
+        alert("holi "+fecha);
+        }
     </script>
 
 {% endblock %}
