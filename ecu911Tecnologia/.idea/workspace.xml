@@ -28,18 +28,28 @@
       <file leaf-file-name="calendario.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/calendario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.702407" vertical-offset="3351" max-vertical-offset="3808">
-              <caret line="216" column="13" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.57186544" vertical-offset="4114" max-vertical-offset="5780">
+              <caret line="253" column="114" selection-start-line="253" selection-start-column="114" selection-end-line="253" selection-end-column="114" />
               <folding>
                 <element signature="e#796#822#0#HTML" expanded="true" />
-                <element signature="e#2240#2287#0#HTML" expanded="true" />
-                <element signature="e#2438#2491#0#HTML" expanded="true" />
-                <element signature="e#2850#2897#0#HTML" expanded="true" />
-                <element signature="e#3027#3101#0#HTML" expanded="true" />
-                <element signature="e#3952#3999#0#HTML" expanded="true" />
-                <element signature="e#4150#4203#0#HTML" expanded="true" />
-                <element signature="e#4544#4591#0#HTML" expanded="true" />
-                <element signature="e#4721#4795#0#HTML" expanded="true" />
+                <element signature="e#1568#1586#0#HTML" expanded="true" />
+                <element signature="e#1630#1674#0#HTML" expanded="true" />
+                <element signature="e#1731#1749#0#HTML" expanded="true" />
+                <element signature="e#1789#1837#0#HTML" expanded="true" />
+                <element signature="e#2492#2539#0#HTML" expanded="true" />
+                <element signature="e#2690#2743#0#HTML" expanded="true" />
+                <element signature="e#3102#3149#0#HTML" expanded="true" />
+                <element signature="e#3279#3353#0#HTML" expanded="true" />
+                <element signature="e#3658#3684#0#HTML" expanded="true" />
+                <element signature="e#3789#3815#0#HTML" expanded="true" />
+                <element signature="e#4252#4299#0#HTML" expanded="true" />
+                <element signature="e#4450#4503#0#HTML" expanded="true" />
+                <element signature="e#4844#4891#0#HTML" expanded="true" />
+                <element signature="e#5021#5095#0#HTML" expanded="true" />
+                <element signature="e#5382#5408#0#HTML" expanded="true" />
+                <element signature="e#5495#5521#0#HTML" expanded="true" />
+                <element signature="e#6492#6518#0#HTML" expanded="true" />
+                <element signature="e#7998#8024#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,14 +58,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checklist/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3721" max-vertical-offset="4335">
-              <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4301" max-vertical-offset="5066">
+              <caret line="261" column="34" selection-start-line="261" selection-start-column="34" selection-end-line="261" selection-end-column="34" />
               <folding>
                 <element signature="e#26#48#0" expanded="true" />
-                <marker date="1426174300426" expanded="true" signature="9619:9793" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1426174300426" expanded="true" signature="9619:9873" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1426174300426" expanded="true" signature="10102:10277" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1426174300426" expanded="true" signature="10102:10355" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="9655:9829" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="9655:9909" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="10244:10419" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="10244:10497" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="10831:11061" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="10831:11090" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="10831:11140" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1426262185947" expanded="true" signature="11725:12033" placeholder="SELECT in_id..te_detalle_inspeccion..." />
               </folding>
             </state>
           </provider>
@@ -64,8 +78,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="629">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="663">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -81,21 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="578" max-vertical-offset="1054">
-              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tareas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/tareas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="1938" max-vertical-offset="3519">
-              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="123" selection-end-column="65" />
+            <state vertical-scroll-proportion="-7.6923075" vertical-offset="3166" max-vertical-offset="3519">
+              <caret line="198" column="31" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -112,10 +116,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ecu911Tecnologia/settings.py" />
-        <option value="$PROJECT_DIR$/templates/tareas.html" />
         <option value="$PROJECT_DIR$/templates/tareaEspecifica.html" />
-        <option value="$PROJECT_DIR$/checklist/views.py" />
         <option value="$PROJECT_DIR$/ecu911Tecnologia/urls.py" />
+        <option value="$PROJECT_DIR$/templates/tareas.html" />
+        <option value="$PROJECT_DIR$/checklist/views.py" />
         <option value="$PROJECT_DIR$/templates/calendario.html" />
       </list>
     </option>
@@ -546,7 +550,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -555,7 +559,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17795275" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3417323" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20717423" sideWeight="0.8062397" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -592,20 +596,62 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="629">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checklist/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1164" max-vertical-offset="1734">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1054">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tareas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="3519">
+          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="123" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/calendario.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#796#822#0#HTML" expanded="true" />
-            <element signature="e#2240#2287#0#HTML" expanded="true" />
-            <element signature="e#2438#2491#0#HTML" expanded="true" />
-            <element signature="e#2850#2897#0#HTML" expanded="true" />
-            <element signature="e#3027#3101#0#HTML" expanded="true" />
-            <element signature="e#3952#3999#0#HTML" expanded="true" />
-            <element signature="e#4150#4203#0#HTML" expanded="true" />
-            <element signature="e#4544#4591#0#HTML" expanded="true" />
-            <element signature="e#4721#4795#0#HTML" expanded="true" />
+            <element signature="e#1568#1586#0#HTML" expanded="true" />
+            <element signature="e#1630#1674#0#HTML" expanded="true" />
+            <element signature="e#1731#1749#0#HTML" expanded="true" />
+            <element signature="e#1789#1837#0#HTML" expanded="true" />
+            <element signature="e#2492#2539#0#HTML" expanded="true" />
+            <element signature="e#2690#2743#0#HTML" expanded="true" />
+            <element signature="e#3102#3149#0#HTML" expanded="true" />
+            <element signature="e#3279#3353#0#HTML" expanded="true" />
+            <element signature="e#3658#3684#0#HTML" expanded="true" />
+            <element signature="e#3789#3815#0#HTML" expanded="true" />
+            <element signature="e#4252#4299#0#HTML" expanded="true" />
+            <element signature="e#4450#4503#0#HTML" expanded="true" />
+            <element signature="e#4844#4891#0#HTML" expanded="true" />
+            <element signature="e#5021#5095#0#HTML" expanded="true" />
+            <element signature="e#5382#5408#0#HTML" expanded="true" />
+            <element signature="e#5495#5521#0#HTML" expanded="true" />
+            <element signature="e#6492#6518#0#HTML" expanded="true" />
+            <element signature="e#7998#8024#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -616,10 +662,14 @@
           <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="e#26#48#0" expanded="true" />
-            <marker date="1426174300426" expanded="true" signature="9619:9793" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="9619:9873" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10277" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10355" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9829" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9909" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10419" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10497" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11061" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11090" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11140" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="11725:12033" placeholder="SELECT in_id..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -670,10 +720,14 @@
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="e#26#48#0" expanded="true" />
-            <marker date="1426174300426" expanded="true" signature="9619:9793" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="9619:9873" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10277" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10355" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9829" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9909" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10419" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10497" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11061" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11090" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11140" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="11725:12033" placeholder="SELECT in_id..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -684,14 +738,24 @@
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
             <element signature="e#796#822#0#HTML" expanded="true" />
-            <element signature="e#2240#2287#0#HTML" expanded="true" />
-            <element signature="e#2438#2491#0#HTML" expanded="true" />
-            <element signature="e#2850#2897#0#HTML" expanded="true" />
-            <element signature="e#3027#3101#0#HTML" expanded="true" />
-            <element signature="e#3952#3999#0#HTML" expanded="true" />
-            <element signature="e#4150#4203#0#HTML" expanded="true" />
-            <element signature="e#4544#4591#0#HTML" expanded="true" />
-            <element signature="e#4721#4795#0#HTML" expanded="true" />
+            <element signature="e#1568#1586#0#HTML" expanded="true" />
+            <element signature="e#1630#1674#0#HTML" expanded="true" />
+            <element signature="e#1731#1749#0#HTML" expanded="true" />
+            <element signature="e#1789#1837#0#HTML" expanded="true" />
+            <element signature="e#2492#2539#0#HTML" expanded="true" />
+            <element signature="e#2690#2743#0#HTML" expanded="true" />
+            <element signature="e#3102#3149#0#HTML" expanded="true" />
+            <element signature="e#3279#3353#0#HTML" expanded="true" />
+            <element signature="e#3658#3684#0#HTML" expanded="true" />
+            <element signature="e#3789#3815#0#HTML" expanded="true" />
+            <element signature="e#4252#4299#0#HTML" expanded="true" />
+            <element signature="e#4450#4503#0#HTML" expanded="true" />
+            <element signature="e#4844#4891#0#HTML" expanded="true" />
+            <element signature="e#5021#5095#0#HTML" expanded="true" />
+            <element signature="e#5382#5408#0#HTML" expanded="true" />
+            <element signature="e#5495#5521#0#HTML" expanded="true" />
+            <element signature="e#6492#6518#0#HTML" expanded="true" />
+            <element signature="e#7998#8024#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,10 +814,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#26#48#0" expanded="true" />
-            <marker date="1426174300426" expanded="true" signature="9619:9793" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="9619:9873" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10277" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10355" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9829" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9909" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10419" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10497" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11061" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11090" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11140" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="11725:12033" placeholder="SELECT in_id..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -764,14 +832,24 @@
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
             <element signature="e#796#822#0#HTML" expanded="true" />
-            <element signature="e#2240#2287#0#HTML" expanded="true" />
-            <element signature="e#2438#2491#0#HTML" expanded="true" />
-            <element signature="e#2850#2897#0#HTML" expanded="true" />
-            <element signature="e#3027#3101#0#HTML" expanded="true" />
-            <element signature="e#3952#3999#0#HTML" expanded="true" />
-            <element signature="e#4150#4203#0#HTML" expanded="true" />
-            <element signature="e#4544#4591#0#HTML" expanded="true" />
-            <element signature="e#4721#4795#0#HTML" expanded="true" />
+            <element signature="e#1568#1586#0#HTML" expanded="true" />
+            <element signature="e#1630#1674#0#HTML" expanded="true" />
+            <element signature="e#1731#1749#0#HTML" expanded="true" />
+            <element signature="e#1789#1837#0#HTML" expanded="true" />
+            <element signature="e#2492#2539#0#HTML" expanded="true" />
+            <element signature="e#2690#2743#0#HTML" expanded="true" />
+            <element signature="e#3102#3149#0#HTML" expanded="true" />
+            <element signature="e#3279#3353#0#HTML" expanded="true" />
+            <element signature="e#3658#3684#0#HTML" expanded="true" />
+            <element signature="e#3789#3815#0#HTML" expanded="true" />
+            <element signature="e#4252#4299#0#HTML" expanded="true" />
+            <element signature="e#4450#4503#0#HTML" expanded="true" />
+            <element signature="e#4844#4891#0#HTML" expanded="true" />
+            <element signature="e#5021#5095#0#HTML" expanded="true" />
+            <element signature="e#5382#5408#0#HTML" expanded="true" />
+            <element signature="e#5495#5521#0#HTML" expanded="true" />
+            <element signature="e#6492#6518#0#HTML" expanded="true" />
+            <element signature="e#7998#8024#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -830,10 +908,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#26#48#0" expanded="true" />
-            <marker date="1426174300426" expanded="true" signature="9619:9793" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="9619:9873" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10277" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10355" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9829" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9909" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10419" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10497" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11061" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11090" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11140" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="11725:12033" placeholder="SELECT in_id..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -844,14 +926,24 @@
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
             <element signature="e#796#822#0#HTML" expanded="true" />
-            <element signature="e#2240#2287#0#HTML" expanded="true" />
-            <element signature="e#2438#2491#0#HTML" expanded="true" />
-            <element signature="e#2850#2897#0#HTML" expanded="true" />
-            <element signature="e#3027#3101#0#HTML" expanded="true" />
-            <element signature="e#3952#3999#0#HTML" expanded="true" />
-            <element signature="e#4150#4203#0#HTML" expanded="true" />
-            <element signature="e#4544#4591#0#HTML" expanded="true" />
-            <element signature="e#4721#4795#0#HTML" expanded="true" />
+            <element signature="e#1568#1586#0#HTML" expanded="true" />
+            <element signature="e#1630#1674#0#HTML" expanded="true" />
+            <element signature="e#1731#1749#0#HTML" expanded="true" />
+            <element signature="e#1789#1837#0#HTML" expanded="true" />
+            <element signature="e#2492#2539#0#HTML" expanded="true" />
+            <element signature="e#2690#2743#0#HTML" expanded="true" />
+            <element signature="e#3102#3149#0#HTML" expanded="true" />
+            <element signature="e#3279#3353#0#HTML" expanded="true" />
+            <element signature="e#3658#3684#0#HTML" expanded="true" />
+            <element signature="e#3789#3815#0#HTML" expanded="true" />
+            <element signature="e#4252#4299#0#HTML" expanded="true" />
+            <element signature="e#4450#4503#0#HTML" expanded="true" />
+            <element signature="e#4844#4891#0#HTML" expanded="true" />
+            <element signature="e#5021#5095#0#HTML" expanded="true" />
+            <element signature="e#5382#5408#0#HTML" expanded="true" />
+            <element signature="e#5495#5521#0#HTML" expanded="true" />
+            <element signature="e#6492#6518#0#HTML" expanded="true" />
+            <element signature="e#7998#8024#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -950,14 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checklist/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1164" max-vertical-offset="1734">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/tareaEspecifica.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.89786226" vertical-offset="642" max-vertical-offset="2754">
@@ -976,56 +1060,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="578" max-vertical-offset="1054">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.4463895" vertical-offset="578" max-vertical-offset="1054">
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tareas.html">
+    <entry file="file://$PROJECT_DIR$/checklist/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="1938" max-vertical-offset="3519">
-          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="123" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1164" max-vertical-offset="1734">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="629">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="663">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/db/backends/mysql/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33163264" vertical-offset="1808" max-vertical-offset="8381">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <marker date="1422683588000" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..INTROSPECT_TEST..." />
+            <marker date="1422683588000" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1422683588000" expanded="true" signature="-1:-1" placeholder="SELECT REFER..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tareas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6923075" vertical-offset="3166" max-vertical-offset="3519">
+          <caret line="198" column="31" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checklist/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3721" max-vertical-offset="4335">
-          <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4301" max-vertical-offset="5066">
+          <caret line="261" column="34" selection-start-line="261" selection-start-column="34" selection-end-line="261" selection-end-column="34" />
           <folding>
             <element signature="e#26#48#0" expanded="true" />
-            <marker date="1426174300426" expanded="true" signature="9619:9793" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="9619:9873" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10277" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1426174300426" expanded="true" signature="10102:10355" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9829" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="9655:9909" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10419" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10244:10497" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11061" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11090" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="10831:11140" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1426262185947" expanded="true" signature="11725:12033" placeholder="SELECT in_id..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/calendario.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.702407" vertical-offset="3351" max-vertical-offset="3808">
-          <caret line="216" column="13" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.57186544" vertical-offset="4114" max-vertical-offset="5780">
+          <caret line="253" column="114" selection-start-line="253" selection-start-column="114" selection-end-line="253" selection-end-column="114" />
           <folding>
             <element signature="e#796#822#0#HTML" expanded="true" />
-            <element signature="e#2240#2287#0#HTML" expanded="true" />
-            <element signature="e#2438#2491#0#HTML" expanded="true" />
-            <element signature="e#2850#2897#0#HTML" expanded="true" />
-            <element signature="e#3027#3101#0#HTML" expanded="true" />
-            <element signature="e#3952#3999#0#HTML" expanded="true" />
-            <element signature="e#4150#4203#0#HTML" expanded="true" />
-            <element signature="e#4544#4591#0#HTML" expanded="true" />
-            <element signature="e#4721#4795#0#HTML" expanded="true" />
+            <element signature="e#1568#1586#0#HTML" expanded="true" />
+            <element signature="e#1630#1674#0#HTML" expanded="true" />
+            <element signature="e#1731#1749#0#HTML" expanded="true" />
+            <element signature="e#1789#1837#0#HTML" expanded="true" />
+            <element signature="e#2492#2539#0#HTML" expanded="true" />
+            <element signature="e#2690#2743#0#HTML" expanded="true" />
+            <element signature="e#3102#3149#0#HTML" expanded="true" />
+            <element signature="e#3279#3353#0#HTML" expanded="true" />
+            <element signature="e#3658#3684#0#HTML" expanded="true" />
+            <element signature="e#3789#3815#0#HTML" expanded="true" />
+            <element signature="e#4252#4299#0#HTML" expanded="true" />
+            <element signature="e#4450#4503#0#HTML" expanded="true" />
+            <element signature="e#4844#4891#0#HTML" expanded="true" />
+            <element signature="e#5021#5095#0#HTML" expanded="true" />
+            <element signature="e#5382#5408#0#HTML" expanded="true" />
+            <element signature="e#5495#5521#0#HTML" expanded="true" />
+            <element signature="e#6492#6518#0#HTML" expanded="true" />
+            <element signature="e#7998#8024#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

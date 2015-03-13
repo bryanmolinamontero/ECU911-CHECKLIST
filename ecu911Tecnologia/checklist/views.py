@@ -222,26 +222,69 @@ def calendario(request):
 
 
 def obtenerMalas(request):
-    fecha = request.GET['fecha']
-    from django.db import connection
-    cursor = connection.cursor()
-    sql = "SELECT SUM(ta_resultado_esperado <> de_resultado) FROM te_detalle_inspeccion JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado"
-    cursor.execute(sql)
-    data = cursor.fetchall()
-    return HttpResponse(data)
+    if request.GET:
+        fecha = request.GET['fecha']
+        from django.db import connection
+        cursor = connection.cursor()
+        sql = "SELECT SUM(ta_resultado_esperado <> de_resultado) FROM te_detalle_inspeccion JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado"
+        cursor.execute(sql)
+        data = cursor.fetchall()
+        return HttpResponse(data)
+    else:
+        return HttpResponseRedirect("/tareas/")
 
 
 def obtenerBuenas(request):
-    fecha = request.GET['fecha']
-    from django.db import connection
-    cursor = connection.cursor()
-    sql = "SELECT SUM(ta_resultado_esperado = de_resultado) FROM te_detalle_inspeccion  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado"
-    cursor.execute(sql)
-    data = cursor.fetchall()
-    return HttpResponse(data)
+    if request.GET:
+        fecha = request.GET['fecha']
+        from django.db import connection
+        cursor = connection.cursor()
+        sql = "SELECT SUM(ta_resultado_esperado = de_resultado) FROM te_detalle_inspeccion  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado"
+        cursor.execute(sql)
+        data = cursor.fetchall()
+        return HttpResponse(data)
+    else:
+        return HttpResponseRedirect("/tareas/")
 
 
+def mostrarMalas(request):
+    if request.GET:
+        fecha = request.GET['fecha']
+        from django.db import connection
+        cursor = connection.cursor()
+        sql = "SELECT  in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado"
+        cursor.execute(sql)
+        rows = cursor.fetchall()
+        import json
+        rowarray_list = []
+        for row in rows:
+            t = (row[0], row[1], row[2], row[3], row[4])
+            rowarray_list.append(t)
 
+        json_string = json.dumps(rowarray_list)
+        return HttpResponse(json_string, mimetype='application/json')
+    else:
+        return HttpResponseRedirect("/tareas/")
+
+
+def mostrarBuenas(request):
+    if request.GET:
+        fecha = request.GET['fecha']
+        from django.db import connection
+        cursor = connection.cursor()
+        sql = "SELECT  in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado"
+        cursor.execute(sql)
+        rows = cursor.fetchall()
+        import json
+        rowarray_list = []
+        for row in rows:
+            t = (row[0], row[1], row[2], row[3], row[4])
+            rowarray_list.append(t)
+
+        json_string = json.dumps(rowarray_list)
+        return HttpResponse(json_string, mimetype='application/json')
+    else:
+        return HttpResponseRedirect("/tareas/")
 
 
 def handler404(request):

@@ -28,5 +28,7 @@ urlpatterns = patterns('',
     url(r'^obtenerMalas/$', obtenerMalas),
     url(r'^obtenerBuenas/$', obtenerBuenas),
 
+    url(r'^mostrarMalas/$', mostrarMalas),
+    url(r'^mostrarBuenas/$', mostrarBuenas),
 )
 handler404 = 'checklist.views.handler404'
