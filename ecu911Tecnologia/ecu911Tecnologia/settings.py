@@ -10,6 +10,16 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+
+
+EMAIL_HOST = '10.125.7.35'
+EMAIL_HOST_USER = 'ecu911\devmachala'
+EMAIL_HOST_PASSWORD = 'p.12345678'
+EMAIL_PORT = 1025 # 587
+EMAIL_USE_TLS = False
+
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.

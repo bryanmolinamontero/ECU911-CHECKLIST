@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 # Create your views here.
 from io import BytesIO
-
+from django.core.mail import EmailMultiAlternatives
 
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
@@ -29,34 +30,6 @@ def reporte(request):
 
     # Create the PDF object, using the response object as its "file."
     p = canvas.Canvas(response,pagesize=A4)
-
-    drawing = Drawing(100, 200)
-    data = [
-    (13, 5, 20, 22, 37, 45, 19, 4),
-    (14, 6, 21, 23, 38, 46, 20, 5)
-    ]
-    bc = VerticalBarChart()
-    bc.x = 50
-    bc.y = 50
-    bc.height = 125
-    bc.width = 300
-    bc.data = data
-    bc.strokeColor = colors.black
-    bc.valueAxis.valueMin = 0
-    bc.valueAxis.valueMax = 50
-    bc.valueAxis.valueStep = 10
-    bc.categoryAxis.labels.boxAnchor = 'ne'
-    bc.categoryAxis.labels.dx = 8
-    bc.categoryAxis.labels.dy = -2
-    bc.categoryAxis.labels.angle = 30
-    bc.categoryAxis.categoryNames = ['Jan-99','Feb-99','Mar-99',
-    'Apr-99','May-99','Jun-99','Jul-99','Aug-99']
-    drawing.add(bc)
-
-    from reportlab.graphics import renderPDF
-    renderPDF.drawToFile(drawing, 'reporte.pdf', 'My First Drawing')
-
-
 
     # Draw things on the PDF. Here's where the PDF generation happens.
     # See the ReportLab documentation for the full list of functionality.
@@ -285,6 +258,133 @@ def mostrarBuenas(request):
         return HttpResponse(json_string, mimetype='application/json')
     else:
         return HttpResponseRedirect("/tareas/")
+
+
+
+def correo(request):
+    registrosTurno = te_turno.objects.all()
+    fechaActual = datetime.date.today()
+    return render_to_response('correo.html', {"registrosTurno":registrosTurno, "fechaActual": fechaActual})
+
+def enviarCorreo(request):
+    if request.GET:
+        try:
+            fecha = request.GET['fecha']
+            nombreUsuario = request.GET['nombreUsuario']
+            registroCorreos = te_usuarios.objects.get(us_nombre=nombreUsuario)
+            correo = registroCorreos.us_correo
+            subject = 'Recordatorio CheckList'
+            text_content = 'Sistema de CheckList'
+            html_content = 'Estimado(a) ' + nombreUsuario + ' se le recuerda que el dia de hoy debe realizar el CheckList.<br> <a target="_blank" href="http://10.125.7.44:8000" > <br>Ir al Sistema</a> <hr> <h3>Att: Administrador de CheckList</h3>'
+            from_email = '"origen" <dev.machala@ecu911.gob.ec>'
+            #to = 'bryanux@hotmail.com'
+            to = correo
+            msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
+            return HttpResponse('True')
+        except:
+            return HttpResponse('False')
+    else:
+        return HttpResponseRedirect("/correo/")
+
+def correoAutomatico(request):
+        try:
+            fecha = datetime.date.today()
+            turnos = te_turno.objects.get(tu_fecha_turno=fecha)
+            nombreUsuario = turnos.tu_nombre_usuario
+            registroCorreos = te_usuarios.objects.get(us_nombre=nombreUsuario)
+            correo = registroCorreos.us_correo
+            subject = 'Recordatorio CheckList'
+            text_content = 'Sistema de CheckList'
+            html_content = 'Estimado(a) ' + nombreUsuario + ' se le recuerda que el dia de hoy debe realizar el CheckList.<br> <a target="_blank" href="http://10.125.7.44:8000" > <br>Ir al Sistema</a> <hr> <h3>Att: Administrador de CheckList</h3>'
+            from_email = '"origen" <dev.machala@ecu911.gob.ec>'
+            #to = 'bryanux@hotmail.com'
+            to = correo
+            msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
+            return HttpResponse('Correo Enviado')
+        except:
+            return HttpResponse('Correo No Enviado')
+
+from reportlab.platypus import (SimpleDocTemplate, PageBreak, Image, Spacer,
+Paragraph, Table, TableStyle)
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.pagesizes import A4
+from reportlab.lib import colors
+import os
+
+def reportePorDia2(request, fecha):
+        doc = SimpleDocTemplate("test.pdf", pagesize = A4)
+
+
+        story=[]
+
+        from django.db import connection
+        cursor = connection.cursor()
+        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id" #consulta que extrae todas las LISTAS DE ESE DIA
+        cursor.execute(sqlListas)
+        rowsListas = cursor.fetchall()
+
+        sqlTareasDeEsaLista = "SELECT de_tarea_nombre, de_tarea_descripcion, de_observacion, de_resultado, de_id_inspeccion FROM te_detalle_inspeccion WHERE de_fecha='"+fecha+"'"
+        cursor.execute(sqlTareasDeEsaLista)
+        rowsTareasDeEsaLista = cursor.fetchall()
+
+        return render_to_response('reportePorDia.html',{"registrosLista":rowsListas, "registrosTarea":rowsTareasDeEsaLista})
+
+
+
+def reportePorDia(request, fecha):
+        print "**********"
+        print fecha
+        print "**********"
+        from django.db import connection
+        cursor = connection.cursor()
+        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id" #consulta que extrae todas las LISTAS DE ESE DIA
+        cursor.execute(sqlListas)
+        rowsListas = cursor.fetchall()
+
+        #return render_to_response('reportePorDia.html',{"registros":rows})
+
+        response = HttpResponse(content_type='application/pdf')
+        response['Content-Disposition'] = 'filename="reporte.pdf"'
+
+        #response['Content-Disposition'] = 'attachment; filename="somefilename.pdf"'
+        p = canvas.Canvas(response,pagesize=A4)
+
+        # pixeles de hoja A4 595x842
+        x = 30
+        y = 750
+        for i in rowsListas:
+            p.drawString(x,y,i[1])
+            y = y - 35
+
+            sqlTareasDeEsaLista = "SELECT de_tarea_nombre, de_tarea_descripcion, de_observacion, de_resultado FROM te_detalle_inspeccion WHERE de_fecha='"+fecha+"' AND de_id_inspeccion = "+str(i[0])
+            cursor.execute(sqlTareasDeEsaLista)
+            rowsTareasDeEsaLista = cursor.fetchall()
+
+            for j in rowsTareasDeEsaLista:
+                p.drawString(x,y,j[0])
+                y = y - 35
+
+                if y<=35:
+                    y=750
+                    p.showPage()
+
+
+        #p.drawImage("http://mejoresimagenes.info/wp-content/uploads/2014/10/imagenes-con-frases-de-la-rana-rene.jpg",10,300)
+        # Close the PDF object cleanly, and we're done.
+
+        p.showPage()
+        p.save()
+        return response
+
+
+
+
+
+
 
 
 def handler404(request):

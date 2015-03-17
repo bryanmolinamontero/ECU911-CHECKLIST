@@ -45,6 +45,7 @@
                     <th>Avance</th>
                     <th style="width:20px">  <span class="glyphicon glyphicon-remove" style="color: red;margin: 0px;padding: 0px;" aria-hidden="true"></span></th>
                     <th style="width:20px">  <span class="glyphicon glyphicon-ok" style="color: #08F72A;margin: 0px;padding: 0px;" aria-hidden="true"></span></th>
+                    <th style="width:20px">  <span class="glyphicon glyphicon-print" style="color: white;margin: 0px;padding: 0px;" aria-hidden="true"></span></th>
 
                     </thead>
                     <tbody>
@@ -73,6 +74,8 @@
                                 {% endif %}
                                 <td class="diaActual" style="text-align: center"; id="mala_{{ i.tu_fecha_turno | safe }}">---</td>
                                 <td class="diaActual" style="text-align: center"; id="buena_{{ i.tu_fecha_turno | safe }}">---</td>
+                                <td class="diaActual" style="text-align: center"; id="reporte_{{ i.tu_fecha_turno | safe  }}">---</td>
+
 
 
                             {% else %}
@@ -98,6 +101,7 @@
                                 {% endif %}
                                 <td style="text-align: center"; id="mala_{{ i.tu_fecha_turno | safe }}">---</td>
                                 <td style="text-align: center"; id="buena_{{ i.tu_fecha_turno | safe }}">---</td>
+                                <td  style="text-align: center"; id="reporte_{{ i.tu_fecha_turno | safe }}">---</td>
 
 
                             {% endif %}
@@ -199,6 +203,7 @@
         $(document).ready(function(){
                     asignarCantidadTareasMalas();
                     asignarCantidadTareasBuenas();
+                    asignarParaReporte();
 
                     $('#table_id').dataTable( {
                         "order": [],
@@ -233,12 +238,11 @@
         );
 
         function asignarCantidadTareasMalas(){
+            var now = new Date();
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
             {% for foo in registrosTurno %}
-                var now = new Date();
-                var day = ("0" + now.getDate()).slice(-2);
-                var month = ("0" + (now.getMonth() + 1)).slice(-2);
-                var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
-
                 var fecha = "{{ foo.tu_fecha_turno | safe}}";
                 if((Date.parse(fecha)) <= (Date.parse(today))) {
                     $.ajax({
@@ -262,12 +266,11 @@
         }// fin de asignar cantidad tareas Malas
 
         function asignarCantidadTareasBuenas(){
+            var now = new Date();
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
             {% for foo in registrosTurno %}
-                var now = new Date();
-                var day = ("0" + now.getDate()).slice(-2);
-                var month = ("0" + (now.getMonth() + 1)).slice(-2);
-                var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
-
                 var fecha = "{{ foo.tu_fecha_turno | safe}}";
                 if((Date.parse(fecha)) <= (Date.parse(today))) {
                     $.ajax({
@@ -290,7 +293,6 @@
             {% endfor %}
         }// fin de asignar cantidad tareas Buenas
 
-
         function mostrarMalas(fecha){
             $.ajax({
                 data : {'fecha':fecha},
@@ -310,15 +312,39 @@
             }); // fin del ajax
         }
 
+        function asignarParaReporte(){
+            var now = new Date();
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+            {% for foo in registrosTurno %}
+                var fecha = "{{ foo.tu_fecha_turno | safe}}";
+                if((Date.parse(fecha)) <= (Date.parse(today))) {
+                    $.ajax({
+                        data : {'fecha':fecha},
+                        url : '/obtenerBuenas/',
+                        type : 'get',
+                        success: function(data){
+                            var estado = data;
+                            var a = estado.split("'");
+                            try {
+                                document.getElementById("reporte_"+'{{ foo.tu_fecha_turno | safe}}').innerHTML='<a target="_blank" href="/reportePorDia/{{ foo.tu_fecha_turno | safe}}" ><span class="glyphicon glyphicon-print" style="color: darkgray;margin: 0px;padding: 0px;" aria-hidden="true"></span></a>';
+                            }
+                            catch(err) {
+                            }
+                        }// fin del success
+                    }); // fin del ajax
+                }
+            {% endfor %}
+        }// fin de asignar cantidad tareas Buenas
 
-    function mostrarBuenas(fecha){
+        function mostrarBuenas(fecha){
             $.ajax({
                 data : {'fecha':fecha},
                 url : '/mostrarBuenas/',
                 type : 'get',
                 success: function(data){
                     var estado = data;
-
                     try {
                         $("#tablaMostarBuenas").find("tr:gt(0)").remove();
                         for(i =0; i<estado.length;i++)

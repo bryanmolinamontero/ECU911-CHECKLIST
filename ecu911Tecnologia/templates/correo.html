@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+    <style>
+        .diaActual{
+            background-color: #F2DEDF;
+            font-weight: bold;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <br/>
+        <div class="row animated bounce bounceInLeft" style="text-align: center">
+            <h1 class="well">Correo a Usuario</h1>
+        </div>
+
+
+        <div class="row animated bounce bounceInLeft">
+            <input type="button" value="PÁGINA PRINCIPAL" onclick="location.href='/tareas/'" class="btn btn-primary"/>
+        </div>
+        <br/>
+        <div class="row animated bounce bounceInRight">
+            <div class="table responsive">
+                <table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="table_id">
+                    <thead class="btn-primary cabeceraTabla">
+                    <th>Usuario</th>
+                    <th>Fecha</th>
+                    <th>Dia</th>
+                    <th>Avance</th>
+                    <th>Correo</th>
+                    </thead>
+                    <tbody>
+                    {% for i in registrosTurno %}
+                        <tr>
+                            {% if i.tu_fecha_turno == fechaActual %}
+                                <td class="diaActual">{{i.tu_nombre_usuario}}</td>
+                                <td class="diaActual">{{i.tu_fecha_turno }} </td>
+                                <td class="diaActual">{{i.tu_dia}}</td>
+                                {% if i.tu_avance > 99 %}
+                                    <td class="diaActual">
+                                        <div class="progress" style="margin-bottom: 0px;padding-bottom: 0px;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 100%; color: #000000; font-size: 14px;">
+                                                100%
+                                            </div>
+                                        </div>
+                                    </td>
+                                {% else %}
+                                    <td class="diaActual">
+                                        <div class="progress" style="margin-bottom: 0px;padding-bottom: 0px;">
+                                            <div class="progress-bar" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: {{ i.tu_avance | safe }}%; color: #000000; font-size: 14px;">
+                                                {{i.tu_avance}}%
+                                            </div>
+                                        </div>
+                                    </td>
+                                {% endif %}
+                               <td class="diaActual" style="text-align: center"; id="estado_{{ i.tu_fecha_turno | safe }}">
+                                    <a href="javascript:enviarCorreo('{{ i.tu_fecha_turno | safe}}' , '{{ i.tu_nombre_usuario }}');">Enviar</a>
+                                </td>
+
+                            {% else %}
+                                <td>{{i.tu_nombre_usuario}}</td>
+                                <td>{{i.tu_fecha_turno  }}</td>
+                                <td>{{i.tu_dia}}</td>
+                                {% if i.tu_avance > 99 %}
+                                    <td>
+                                        <div class="progress" style="margin-bottom: 0px;padding-bottom: 0px;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 100%; color: #000000; font-size: 14px;">
+                                                100%
+                                            </div>
+                                        </div>
+                                    </td>
+                                {% else %}
+                                    <td>
+                                        <div class="progress" style="margin-bottom: 0px;padding-bottom: 0px;">
+                                            <div class="progress-bar" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: {{ i.tu_avance | safe }}%; color: #000000; font-size: 14px;">
+                                                {{i.tu_avance}}%
+                                            </div>
+                                        </div>
+                                    </td>
+                                {% endif %}
+                                <td style="text-align: center"; id="estado_{{ i.tu_fecha_turno | safe }}">
+                                    <a href="javascript:enviarCorreo('{{ i.tu_fecha_turno | safe}}' , '{{ i.tu_nombre_usuario }}');">Enviar</a>
+                                </td>
+
+
+                            {% endif %}
+
+
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
+
+
+
+{% block js %}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+                    $('#table_id').dataTable( {
+                        "order": [],
+                        "aLengthMenu": [[ 25, 50, 75, 100, -1], [ 25, 50, 75, 100, "Todos"]],
+                        "language": {
+                            "sProcessing":     "Procesando...",
+                            "sLengthMenu":     "Mostrar _MENU_ registros",
+                            "sZeroRecords":    "No se encontraron resultados",
+                            "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                            "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                            "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                            "sInfoPostFix":    "",
+                            "sSearch":         "Buscar:",
+                            "sUrl":            "",
+                            "sInfoThousands":  ",",
+                            "sLoadingRecords": "Cargando...",
+                            "oPaginate": {
+                                "sFirst":    "Primero",
+                                "sLast":     "Último",
+                                "sNext":     "Siguiente",
+                                "sPrevious": "Anterior"
+                            },
+                            "oAria": {
+                                "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                            }
+                        }
+                    } );
+
+                }
+        );
+
+        function enviarCorreo(fecha, nombreUsuario){
+        var div =  '<div class="progress" style="margin-bottom: 0px;padding-bottom: 0px;"> <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> </div> </div>';
+        document.getElementById("estado_"+fecha).innerHTML=div;
+            $.ajax({
+                data : {'fecha':fecha, 'nombreUsuario':nombreUsuario},
+                url : '/enviarCorreo/',
+                type : 'get',
+                success: function(data){
+                    var estado = data;
+                    if (estado=="True"){
+                        var div =  'Correo Enviado';
+                        document.getElementById("estado_"+fecha).innerHTML=div;
+                    }
+                    else{
+                        var div =  'Error';
+                        document.getElementById("estado_"+fecha).innerHTML=div;
+                    }
+
+                }// fin del success
+            }); // fin del ajax
+
+        }
+
+
+
+    </script>
+
+{% endblock %}

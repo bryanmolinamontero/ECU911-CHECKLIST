@@ -75,11 +75,12 @@ class te_usuarios(models.Model):
     us_password = models.CharField(max_length=100)
     us_id_contacto = models.IntegerField()
     us_nombre = models.CharField(max_length=200)
+    us_correo = models.CharField(max_length=100)
     class Meta:
         db_table = 'te_usuarios'
 
     def __unicode__(self):
-        return '%d, %s, %s, %d, %s' % (self.us_id, self.us_usuario, self.us_password, self.us_id_contacto, self.us_nombre)
+        return '%d, %s, %s, %d, %s, %s' % (self.us_id, self.us_usuario, self.us_password, self.us_id_contacto, self.us_nombre, self.us_correo)
 
 
 class te_turno(models.Model):

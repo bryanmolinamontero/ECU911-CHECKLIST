@@ -30,5 +30,14 @@ urlpatterns = patterns('',
 
     url(r'^mostrarMalas/$', mostrarMalas),
     url(r'^mostrarBuenas/$', mostrarBuenas),
+
+
+    url(r'^correo/$', correo),
+    url(r'^enviarCorreo/$', enviarCorreo),
+
+    url(r'^correoAutomatico/$', correoAutomatico),
+
+
+    url(r'^reportePorDia/(.*?)$',reportePorDia2),
 )
 handler404 = 'checklist.views.handler404'
