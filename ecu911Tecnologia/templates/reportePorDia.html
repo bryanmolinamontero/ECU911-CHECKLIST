@@ -24,6 +24,9 @@
         .fuente1 {
             font-size: 12px;
         }
+        .centrar_td{
+            text-align: center;
+        }
 
     </style>
 
@@ -32,6 +35,13 @@
 
 {% block body %}
 
+<div class="container">
+        <div class="row animated rubberBand" style="text-align: center">
+            <h1 class="well">REPORTE DE INSPECCIÓN</h1>
+        </div>
+
+    <br/><a href="javascript:imprimir('print')">Imprimir</a>
+</div>
     <div class="container" id="print" ><br/>
 
 
@@ -42,9 +52,9 @@
             <table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="tabla2">
                 <thead>
                 <th>Nombre de Tarea</th>
-                <th>Descripcion</th>
-                <th>Obsv.</th>
-                <th>Res</th>
+                <th>Descripción</th>
+                <th>Observación</th>
+                <th>Res.</th>
                 </thead>
                 <tbody>
                 {% for j in registrosTarea %}
@@ -53,7 +63,12 @@
                             <td>{{ j.0 }}</td>
                             <td>{{ j.1 }}</td>
                             <td>{{ j.2 }}</td>
-                            <td>{{ j.3 }}</td>
+                            <td class ="centrar_td">{% if  j.3 == 1 %}
+                                    Y
+                                {% else %}
+                                    N
+                                {% endif %}
+                            </td>
                         </tr>
                     {% endif %}
                 {% endfor %}
@@ -65,7 +80,7 @@
         {% endfor %}
     </div>
 
-    <a href="javascript:imprimir('print')">Imprimir</a>
+
 
 
 
@@ -115,22 +130,19 @@
 
         function imprimir(paraImprimir) {
             var ficha = document.getElementById("print");
+
             var ventimp = window.open(' ', '_blank');
             ventimp.document.write( ficha.innerHTML );
             ventimp.document.close();
 
-            var css = ventimp.document.createElement("link");
-            css.setAttribute("href", "//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css");
-            css.setAttribute("rel", "stylesheet");
-            css.setAttribute("type", "text/css");
-            ventimp.document.head.appendChild(css);
+
+            ventimp.document.head.innerHTML= '<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/> ' +
+            '<style>table{font-size:10px;} .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {padding: 2px;} h4{font-size:12px;}   .centrar_td{text-align: center;}</style>';
+
             ventimp.print( );
             ventimp.close();
         }
 
     </script>
-
-
-
 
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-  <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
 
 {% endblock %}
 {% block body %}
@@ -55,14 +55,27 @@
                 </div>
 
                 <div class="col-md-2" style="margin-top: 25px;">
+                    <div class="visible-lg">
+                        <input type="button" class="btn btn-primary boton1" value=" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Empezar a Evaluar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" onclick="validarDiaConUsuario()">
+                    </div>
 
-                   <input type="button" class="btn btn-primary" value="&nbsp;&nbsp;&nbsp;  Empezar a Evaluar &nbsp;&nbsp;&nbsp;&nbsp;" onclick="validarDiaConUsuario()">
+
+                    <div class="visible-md visible-sm visible-xs">
+                        <input type="button" class="btn btn-primary boton1" value=" Empezar a Evaluar" onclick="validarDiaConUsuario()">
+                    </div>
 
                 </div>
                 <div class="col-md-2" style="margin-top: 25px;">
 
-                    <a href="/calendario/" target="_blank" type="button" class="btn btn-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ver Calendario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
 
+
+                    <div class="visible-lg">
+                        <a href="/calendario/" target="_blank" type="button" class="btn btn-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ver Calendario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                    </div>
+
+                    <div class="visible-md visible-sm visible-xs">
+                        <a href="/calendario/" target="_blank" type="button" class="btn btn-danger">Ver Calendario </a>
+                    </div>
 
                 </div>
 
@@ -183,9 +196,9 @@
                             form.submit();
 
                         /*document.getElementById('estadoID').innerHTML = "<h1>HOY SI LE TOCA</h1>";
-                        $('#myModal').modal('show');
-                        timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
-                        setInterval(function () {$('#pruebita').addClass('animated bounceOutLeft');}, 3000);*/
+                         $('#myModal').modal('show');
+                         timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
+                         setInterval(function () {$('#pruebita').addClass('animated bounceOutLeft');}, 3000);*/
                         //
                     }
                     else{

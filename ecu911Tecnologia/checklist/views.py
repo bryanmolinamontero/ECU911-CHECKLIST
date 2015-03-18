@@ -225,7 +225,7 @@ def mostrarMalas(request):
         fecha = request.GET['fecha']
         from django.db import connection
         cursor = connection.cursor()
-        sql = "SELECT  in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado"
+        sql = "SELECT  in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado order by li_orden"
         cursor.execute(sql)
         rows = cursor.fetchall()
         import json
@@ -245,7 +245,7 @@ def mostrarBuenas(request):
         fecha = request.GET['fecha']
         from django.db import connection
         cursor = connection.cursor()
-        sql = "SELECT  in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado"
+        sql = "SELECT  in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado order by li_orden"
         cursor.execute(sql)
         rows = cursor.fetchall()
         import json
@@ -323,7 +323,7 @@ def reportePorDia2(request, fecha):
 
         from django.db import connection
         cursor = connection.cursor()
-        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id" #consulta que extrae todas las LISTAS DE ESE DIA
+        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id order by li_orden" #consulta que extrae todas las LISTAS DE ESE DIA
         cursor.execute(sqlListas)
         rowsListas = cursor.fetchall()
 
@@ -341,7 +341,7 @@ def reportePorDia(request, fecha):
         print "**********"
         from django.db import connection
         cursor = connection.cursor()
-        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id" #consulta que extrae todas las LISTAS DE ESE DIA
+        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id order by li_nombre" #consulta que extrae todas las LISTAS DE ESE DIA
         cursor.execute(sqlListas)
         rowsListas = cursor.fetchall()
 
@@ -360,7 +360,7 @@ def reportePorDia(request, fecha):
             p.drawString(x,y,i[1])
             y = y - 35
 
-            sqlTareasDeEsaLista = "SELECT de_tarea_nombre, de_tarea_descripcion, de_observacion, de_resultado FROM te_detalle_inspeccion WHERE de_fecha='"+fecha+"' AND de_id_inspeccion = "+str(i[0])
+            sqlTareasDeEsaLista = "SELECT de_tarea_nombre, de_tarea_descripcion, de_observacion, de_resultado FROM te_detalle_inspeccion WHERE de_fecha='"+fecha+"' AND de_id_inspeccion = "+str(i[0]) + "order by de_tarea_nombre"
             cursor.execute(sqlTareasDeEsaLista)
             rowsTareasDeEsaLista = cursor.fetchall()
 
