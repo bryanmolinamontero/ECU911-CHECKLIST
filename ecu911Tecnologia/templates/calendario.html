@@ -280,12 +280,13 @@
                                  '<table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="tablaMostrarMalas"> ' +
                                  '<thead class="btn-primary cabeceraTabla"> ' +
                                  '<th class="col-sm-3" >Tarea</th> ' +
+                                 '<th class="col-sm-3" >Descripción</th> ' +
                                  '<th class="col-sm-1" >Observación</th> ' +
                                  '</thead> ' +
                                  '<tbody> ';
                                 for (j = 0; j < data.tareas.length; j++) {
                                         if(data.listas[i][0] == data.tareas[j][0]) {
-                                            contenido = contenido + '<tr><td>' + data.tareas[j][3] + '</td><td>'+ data.tareas[j][4] +'</td></tr>';
+                                            contenido = contenido + '<tr><td>' + data.tareas[j][3] + '</td><td>'+ data.tareas[j][4] +'</td><td>'+ data.tareas[j][5] +'</td></tr>';
                                         }//fin del if
                                 }//fin del for J
                                 contenido = contenido + '</tbody></table><div>';
@@ -323,12 +324,13 @@
                                  '<table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="tablaMostrarBuenas"> ' +
                                  '<thead class="btn-primary cabeceraTabla"> ' +
                                  '<th class="col-sm-3" >Tarea</th> ' +
+                                 '<th class="col-sm-3" >Descripción</th> ' +
                                  '<th class="col-sm-1" >Observación</th> ' +
                                  '</thead> ' +
                                  '<tbody> ';
                                 for (j = 0; j < data.tareas.length; j++) {
                                         if(data.listas[i][0] == data.tareas[j][0]) {
-                                            contenido = contenido + '<tr><td>' + data.tareas[j][3] + '</td><td>'+ data.tareas[j][4] +'</td></tr>';
+                                            contenido = contenido + '<tr><td>' + data.tareas[j][3] + '</td><td>'+ data.tareas[j][4] +'</td><td>'+ data.tareas[j][5] +'</td></tr>';
                                         }//fin del if
                                 }//fin del for J
                                 contenido = contenido + '</tbody></table><div>';
