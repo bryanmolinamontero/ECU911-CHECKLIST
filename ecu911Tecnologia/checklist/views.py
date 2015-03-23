@@ -369,7 +369,6 @@ import os
 
 def reportePorDia2(request, fecha):
 
-
         try:
             usuario = te_turno.objects.get(tu_fecha_turno=fecha)
             from django.db import connection

@@ -2,6 +2,9 @@
 
 {% block head %}
     <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+    <script src="http://cdn.bootcss.com/alertify.js/0.3.11/alertify.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/alertify.js/0.3.11/alertify.default.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/alertify.js/0.3.10/alertify.core.css">
 
 {% endblock %}
 {% block body %}
@@ -202,9 +205,10 @@
                         //
                     }
                     else{
-                        document.getElementById('estadoID').innerHTML = "<h1>Hoy No Le Toca</h1>";
+                        alertify.log("El dia de hoy no le corresponde el CHECKLIST.");
+                        /*document.getElementById('estadoID').innerHTML = "<h1>Hoy No Le Toca</h1>";
                         $('#myModal').modal('show')
-                        timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);
+                        timeout = window.setTimeout(function () {$('#myModal').modal('hide')}, 1500);*/
                     }
 
                 }// fin del success
