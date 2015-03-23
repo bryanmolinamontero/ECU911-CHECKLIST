@@ -128,26 +128,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title" id="myModalLabel">Tareas en mal estado</h4>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-8"></div>
-                        <div class="col-md-4" style="text-align: center" id="estadoUnidad"></div>
-                    </div>
+                <div class="modal-body" id="cuerpoModalMalas">
 
-                    <div class="table-responsive">
-                        <table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="tablaMostarMalas">
-                            <thead class="btn-primary cabeceraTabla">
-                            <th>Lista Principal</th>
-                            <th>Tarea Específica</th>
-                            <th>Observación</th>
-
-                            </thead>
-
-                            <tbody>
-
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
             </div>
         </div>
@@ -164,26 +146,10 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title" id="myModalLabel">Tareas Correctas</h4>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-8"></div>
-                        <div class="col-md-4" style="text-align: center" id="estadoUnidad"></div>
-                    </div>
+                <div class="modal-body" id ="cuerpoModalBuenas">
 
-                    <div class="table-responsive">
-                        <table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="tablaMostrarBuenas">
-                            <thead class="btn-primary cabeceraTabla">
-                            <th>Lista Principal</th>
-                            <th>Tarea Específica</th>
-                            <th>Observación</th>
 
-                            </thead>
-
-                            <tbody>
-
-                            </tbody>
-                        </table>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -294,20 +260,87 @@
         }// fin de asignar cantidad tareas Buenas
 
         function mostrarMalas(fecha){
+            document.getElementById("cuerpoModalMalas").innerHTML ="";
             $.ajax({
                 data : {'fecha':fecha},
                 url : '/mostrarMalas/',
                 type : 'get',
                 success: function(data){
-                    var estado = data;
+                    var flag = false;
                     try {
-                        $("#tablaMostarMalas").find("tr:gt(0)").remove();
-                        for(i =0; i<estado.length;i++)
-                            $('#tablaMostarMalas > tbody:last').append("<tr><td>"+ estado[i][1]+"</td><td>"+ estado[i][3]+"</td><td>"+ estado[i][4]+"</td></tr>");
+                        for(i =0; i<data.listas.length;i++) {
+                            for (j = 0; j < data.tareas.length; j++) {
+                                if(data.listas[i][0] == data.tareas[j][0])
+                                    flag = true;
+                            }//fin del for J
+
+                            if (flag == true){
+                                contenido = '<h4>' + data.listas[i][1] + '</h4>';
+                                contenido = contenido + ' <div class="table-responsive">' +
+                                 '<table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="tablaMostrarMalas"> ' +
+                                 '<thead class="btn-primary cabeceraTabla"> ' +
+                                 '<th class="col-sm-3" >Tarea</th> ' +
+                                 '<th class="col-sm-1" >Observación</th> ' +
+                                 '</thead> ' +
+                                 '<tbody> ';
+                                for (j = 0; j < data.tareas.length; j++) {
+                                        if(data.listas[i][0] == data.tareas[j][0]) {
+                                            contenido = contenido + '<tr><td>' + data.tareas[j][3] + '</td><td>'+ data.tareas[j][4] +'</td></tr>';
+                                        }//fin del if
+                                }//fin del for J
+                                contenido = contenido + '</tbody></table><div>';
+                                $( "#cuerpoModalMalas" ).append(contenido );
+                                flag = false;
+                            }//fin del if
+                        }// fin del for I
                         $('#myModal').modal('show');
-                    }
+                    }//fin del try
                     catch(err) {
                     }
+
+                }// fin del success
+            }); // fin del ajax
+        }
+
+        function mostrarBuenas(fecha){
+            document.getElementById("cuerpoModalBuenas").innerHTML ="";
+            $.ajax({
+                data : {'fecha':fecha},
+                url : '/mostrarBuenas/',
+                type : 'get',
+                success: function(data){
+                    var flag = false;
+                    try {
+                        for(i =0; i<data.listas.length;i++) {
+                            for (j = 0; j < data.tareas.length; j++) {
+                                if(data.listas[i][0] == data.tareas[j][0])
+                                    flag = true;
+                            }//fin del for J
+
+                            if (flag == true){
+                                contenido = '<h4>' + data.listas[i][1] + '</h4>';
+                                contenido = contenido + ' <div class="table-responsive">' +
+                                 '<table class="table table-striped table-content table-bordered table-hover " xmlns="http://www.w3.org/1999/html" id="tablaMostrarBuenas"> ' +
+                                 '<thead class="btn-primary cabeceraTabla"> ' +
+                                 '<th class="col-sm-3" >Tarea</th> ' +
+                                 '<th class="col-sm-1" >Observación</th> ' +
+                                 '</thead> ' +
+                                 '<tbody> ';
+                                for (j = 0; j < data.tareas.length; j++) {
+                                        if(data.listas[i][0] == data.tareas[j][0]) {
+                                            contenido = contenido + '<tr><td>' + data.tareas[j][3] + '</td><td>'+ data.tareas[j][4] +'</td></tr>';
+                                        }//fin del if
+                                }//fin del for J
+                                contenido = contenido + '</tbody></table><div>';
+                                $( "#cuerpoModalBuenas" ).append(contenido );
+                                flag = false;
+                            }//fin del if
+                        }// fin del for I
+                        $('#myModal2').modal('show');
+                    }//fin del try
+                    catch(err) {
+                    }
+
                 }// fin del success
             }); // fin del ajax
         }
@@ -338,24 +371,7 @@
             {% endfor %}
         }// fin de asignar cantidad tareas Buenas
 
-        function mostrarBuenas(fecha){
-            $.ajax({
-                data : {'fecha':fecha},
-                url : '/mostrarBuenas/',
-                type : 'get',
-                success: function(data){
-                    var estado = data;
-                    try {
-                        $("#tablaMostarBuenas").find("tr:gt(0)").remove();
-                        for(i =0; i<estado.length;i++)
-                            $('#tablaMostrarBuenas > tbody:last').append("<tr><td>"+ estado[i][1]+"</td><td>"+ estado[i][3]+"</td><td>"+ estado[i][4]+"</td></tr>");
-                        $('#myModal2').modal('show');
-                    }
-                    catch(err) {
-                    }
-                }// fin del success
-            }); // fin del ajax
-        }
+
     </script>
 
 {% endblock %}

@@ -101,15 +101,21 @@ def guardarTareaEspecifica(request):
                 fecha=  request.GET['fecha']
 
                 print "***************"
-                print idInspeccion
-                print idLista
+
                 print idTarea
-                print tareaNombre
-                print descripcionTarea
                 print resultado
                 print observacion
-                print fecha
+
                 print "***************"
+
+                #SELECT ta_resultado_esperado FROM te_tareas WHERE ta_id = 105
+                verificarResultadoEsperado = te_tareas.objects.get(ta_id = idTarea)
+                if str(resultado) != str(verificarResultadoEsperado.ta_resultado_esperado) and observacion=="":
+                    return HttpResponse("ResultadoNoEsperado")
+                    print "ResultadoNoEsperado"
+                else:
+                    print "ResultadoEsperado"
+
 
                 verificadorDeInspeccionGuardada = te_detalle_inspeccion.objects.filter(de_id_inspeccion = idInspeccion, de_id_listas = idLista, de_id_tareas = idTarea,  de_fecha= fecha)
                 cont = 0
@@ -137,7 +143,6 @@ def guardarTareaEspecifica(request):
                     te_detalle_inspeccion.objects.filter(de_id_inspeccion = idInspeccion, de_id_listas = idLista, de_id_tareas = idTarea,  de_fecha= fecha).update(de_resultado = resultado, de_observacion = observacion)
 
                 return HttpResponse("True")
-
                 '''de_id_inspeccion = models.IntegerField()
                     de_id_listas = models.IntegerField()
                     de_id_tareas = models.IntegerField()
@@ -147,13 +152,11 @@ def guardarTareaEspecifica(request):
                     de_observacion = models.CharField(max_length=500, blank=True)
                     de_fecha = models.DateField()
                    '''
-            
             except:
                 print "**** ERROR ****"
                 return HttpResponse("False")
     else:
         return HttpResponseRedirect("/tareas/")
-
 
 
 def validarDiaConUsuario(request):
@@ -223,24 +226,83 @@ def obtenerBuenas(request):
 def mostrarMalas(request):
     if request.GET:
         fecha = request.GET['fecha']
+
+        usuario = te_turno.objects.get(tu_fecha_turno=fecha)
         from django.db import connection
         cursor = connection.cursor()
-        sql = "SELECT  in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado order by li_orden"
-        cursor.execute(sql)
-        rows = cursor.fetchall()
+        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id order by li_orden" #consulta que extrae todas las LISTAS DE ESE DIA
+        cursor.execute(sqlListas)
+        rowsListas = cursor.fetchall()
         import json
-        rowarray_list = []
-        for row in rows:
-            t = (row[0], row[1], row[2], row[3], row[4])
-            rowarray_list.append(t)
+        rowarray_Listas = []
+        for row in rowsListas:
+            t = (row[0], row[1])
+            rowarray_Listas.append(t)
 
-        json_string = json.dumps(rowarray_list)
-        return HttpResponse(json_string, mimetype='application/json')
+        json_Listas = json.dumps(rowarray_Listas)
+
+
+        sqlTareas = "SELECT in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado ORDER BY li_orden"
+        cursor.execute(sqlTareas)
+        rowsTareas = cursor.fetchall()
+        import json
+        rowarray_Tareas = []
+        for row in rowsTareas:
+            t = (row[0], row[1] , row[2] , row[3] , row[4])
+            rowarray_Tareas.append(t)
+
+        json_Tareas = json.dumps(rowarray_Tareas)
+
+        data = json.dumps({
+        'listas': rowarray_Listas,
+        'tareas': rowarray_Tareas,
+        })
+
+        return HttpResponse(data, mimetype='application/json')
     else:
         return HttpResponseRedirect("/tareas/")
 
 
 def mostrarBuenas(request):
+    if request.GET:
+        fecha = request.GET['fecha']
+
+        usuario = te_turno.objects.get(tu_fecha_turno=fecha)
+        from django.db import connection
+        cursor = connection.cursor()
+        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id order by li_orden" #consulta que extrae todas las LISTAS DE ESE DIA
+        cursor.execute(sqlListas)
+        rowsListas = cursor.fetchall()
+        import json
+        rowarray_Listas = []
+        for row in rowsListas:
+            t = (row[0], row[1])
+            rowarray_Listas.append(t)
+
+        json_Listas = json.dumps(rowarray_Listas)
+
+
+        sqlTareas = "SELECT in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado ORDER BY li_orden"
+        cursor.execute(sqlTareas)
+        rowsTareas = cursor.fetchall()
+        import json
+        rowarray_Tareas = []
+        for row in rowsTareas:
+            t = (row[0], row[1] , row[2] , row[3] , row[4])
+            rowarray_Tareas.append(t)
+
+        json_Tareas = json.dumps(rowarray_Tareas)
+
+        data = json.dumps({
+        'listas': rowarray_Listas,
+        'tareas': rowarray_Tareas,
+        })
+
+        return HttpResponse(data, mimetype='application/json')
+    else:
+        return HttpResponseRedirect("/tareas/")
+
+def mostrarBuenas2(request):
     if request.GET:
         fecha = request.GET['fecha']
         from django.db import connection
@@ -316,22 +378,23 @@ from reportlab.lib import colors
 import os
 
 def reportePorDia2(request, fecha):
-        doc = SimpleDocTemplate("test.pdf", pagesize = A4)
 
 
-        story=[]
+        try:
+            usuario = te_turno.objects.get(tu_fecha_turno=fecha)
+            from django.db import connection
+            cursor = connection.cursor()
+            sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id order by li_orden" #consulta que extrae todas las LISTAS DE ESE DIA
+            cursor.execute(sqlListas)
+            rowsListas = cursor.fetchall()
 
-        from django.db import connection
-        cursor = connection.cursor()
-        sqlListas = "SELECT in_id, li_nombre  FROM te_inspeccion, te_listas WHERE in_fecha='"+fecha+"' AND te_inspeccion.in_id_lista=te_listas.li_id order by li_orden" #consulta que extrae todas las LISTAS DE ESE DIA
-        cursor.execute(sqlListas)
-        rowsListas = cursor.fetchall()
+            sqlTareasDeEsaLista = "SELECT de_tarea_nombre, de_tarea_descripcion, de_observacion, de_resultado, de_id_inspeccion FROM te_detalle_inspeccion WHERE de_fecha='"+fecha+"'"
+            cursor.execute(sqlTareasDeEsaLista)
+            rowsTareasDeEsaLista = cursor.fetchall()
 
-        sqlTareasDeEsaLista = "SELECT de_tarea_nombre, de_tarea_descripcion, de_observacion, de_resultado, de_id_inspeccion FROM te_detalle_inspeccion WHERE de_fecha='"+fecha+"'"
-        cursor.execute(sqlTareasDeEsaLista)
-        rowsTareasDeEsaLista = cursor.fetchall()
-
-        return render_to_response('reportePorDia.html',{"registrosLista":rowsListas, "registrosTarea":rowsTareasDeEsaLista})
+            return render_to_response('reportePorDia.html',{"usuario":usuario, "registrosLista":rowsListas, "registrosTarea":rowsTareasDeEsaLista})
+        except:
+            return HttpResponseRedirect('/calendario/')
 
 
 

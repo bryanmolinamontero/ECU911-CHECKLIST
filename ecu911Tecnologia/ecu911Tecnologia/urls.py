@@ -37,6 +37,7 @@ urlpatterns = patterns('',
 
     url(r'^correoAutomatico/$', correoAutomatico),
 
+    url(r'^reportePorDia/$', calendario),
 
     url(r'^reportePorDia/(.*?)$',reportePorDia2),
 )

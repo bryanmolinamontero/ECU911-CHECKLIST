@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block head %}
     <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.2.0/animate.min.css">
+    <script src="http://cdn.bootcss.com/alertify.js/0.3.11/alertify.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/alertify.js/0.3.11/alertify.default.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/alertify.js/0.3.10/alertify.core.css">
+
 {% endblock %}
 {% block body %}
     <div class="container animated zoomInDown"><!--Primer container-->
@@ -134,7 +138,10 @@
                     type : 'get',
                     success: function(data){
                         var estado = data;
-
+                        if(estado == "ResultadoNoEsperado" && $( "#observacion_"+idTarea ).val()=='' ){
+                            alertify.log("El resultado no es el esperado, debe ingresar una observación.");
+                            $( "#observacion_"+idTarea ).focus();
+                        }
                         if (estado == "True"){
                             $("#error_"+idTarea).css({'background-color' : '#52A552'});
                             $("#error2_"+idTarea).css({'background-color' : '#52A552'});
@@ -143,9 +150,7 @@
                             $("#error_"+idTarea).css({'background-color' : '#F2DEDE'});
                             $("#error2_"+idTarea).css({'background-color' : '#F2DEDE'});
                         }
-
                     }// fin del success
-
                 }); // fin del ajax
             }else{
                 $("#error_"+idTarea).css({'background-color' : '#F2DEDE'});
