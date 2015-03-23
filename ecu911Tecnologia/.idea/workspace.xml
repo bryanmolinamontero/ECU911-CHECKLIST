@@ -25,43 +25,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="calendario.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calendario.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/calendario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7150838" vertical-offset="5464" max-vertical-offset="6494">
-              <caret line="344" column="31" selection-start-line="344" selection-start-column="31" selection-end-line="344" selection-end-column="31" />
+            <state vertical-scroll-proportion="-17.0" vertical-offset="5950" max-vertical-offset="6494">
+              <caret line="376" column="14" selection-start-line="376" selection-start-column="14" selection-end-line="376" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/checklist/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4622" max-vertical-offset="7837">
-              <caret line="303" column="0" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4831261" vertical-offset="3961" max-vertical-offset="7667">
+              <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
               <folding>
                 <element signature="e#50#72#0" expanded="true" />
-                <marker date="1427124831913" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="10978:11207" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="10978:11304" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="12088:12233" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="12582:12907" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="13623:13931" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="13623:13949" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="17210:17337" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="17210:17347" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="17210:17355" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="17523:17669" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="17523:17670" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="18204:18331" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="18204:18350" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="19009:19161" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-                <marker date="1427124831913" expanded="true" signature="19009:19200" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="10926:11155" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="10926:11252" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="11985:12130" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="12427:12752" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="13417:13725" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="13417:13743" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="17004:17131" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="17004:17141" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="17004:17149" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="17317:17463" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="17317:17464" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="17998:18125" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="17998:18144" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="18803:18955" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1427125419355" expanded="true" signature="18803:18994" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
               </folding>
             </state>
           </provider>
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/ecu911Tecnologia/urls.py" />
         <option value="$PROJECT_DIR$/templates/reportePorDia.html" />
         <option value="$PROJECT_DIR$/templates/tareaEspecifica.html" />
-        <option value="$PROJECT_DIR$/checklist/views.py" />
         <option value="$PROJECT_DIR$/templates/calendario.html" />
+        <option value="$PROJECT_DIR$/checklist/views.py" />
       </list>
     </option>
   </component>
@@ -617,26 +617,26 @@
           <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427124831913" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11207" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11304" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12088:12233" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12582:12907" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13931" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13949" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17337" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17347" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17355" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17669" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17670" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18331" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18350" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19161" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19200" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11155" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11252" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="11985:12130" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="12427:12752" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13725" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13743" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17131" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17141" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17149" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17463" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17464" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18125" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18144" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18955" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18994" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -686,26 +686,26 @@
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427124831913" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11207" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11304" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12088:12233" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12582:12907" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13931" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13949" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17337" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17347" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17355" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17669" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17670" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18331" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18350" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19161" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19200" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11155" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11252" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="11985:12130" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="12427:12752" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13725" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13743" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17131" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17141" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17149" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17463" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17464" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18125" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18144" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18955" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18994" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -771,26 +771,26 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427124831913" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11207" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11304" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12088:12233" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12582:12907" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13931" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13949" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17337" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17347" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17355" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17669" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17670" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18331" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18350" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19161" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19200" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11155" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11252" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="11985:12130" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="12427:12752" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13725" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13743" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17131" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17141" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17149" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17463" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17464" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18125" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18144" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18955" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18994" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -856,26 +856,26 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427124831913" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11207" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11304" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12088:12233" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12582:12907" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13931" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13949" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17337" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17347" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17355" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17669" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17670" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18331" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18350" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19161" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19200" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11155" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11252" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="11985:12130" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="12427:12752" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13725" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13743" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17131" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17141" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17149" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17463" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17464" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18125" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18144" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18955" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18994" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -1085,41 +1085,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checklist/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/calendario.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4622" max-vertical-offset="7837">
-          <caret line="303" column="0" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427124831913" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11207" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="10978:11304" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12088:12233" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="12582:12907" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13931" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="13623:13949" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17337" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17347" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17210:17355" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17669" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="17523:17670" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18331" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="18204:18350" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19161" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427124831913" expanded="true" signature="19009:19200" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-          </folding>
+        <state vertical-scroll-proportion="-17.0" vertical-offset="5950" max-vertical-offset="6494">
+          <caret line="376" column="14" selection-start-line="376" selection-start-column="14" selection-end-line="376" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calendario.html">
+    <entry file="file://$PROJECT_DIR$/checklist/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7150838" vertical-offset="5464" max-vertical-offset="6494">
-          <caret line="344" column="31" selection-start-line="344" selection-start-column="31" selection-end-line="344" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="0.4831261" vertical-offset="3961" max-vertical-offset="7667">
+          <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#72#0" expanded="true" />
+            <marker date="1427125419355" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11155" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="10926:11252" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="11985:12130" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="12427:12752" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13725" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="13417:13743" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17131" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17141" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17004:17149" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17463" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17317:17464" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18125" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="17998:18144" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18955" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1427125419355" expanded="true" signature="18803:18994" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+          </folding>
         </state>
       </provider>
     </entry>

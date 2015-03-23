@@ -239,9 +239,6 @@ def mostrarMalas(request):
             t = (row[0], row[1])
             rowarray_Listas.append(t)
 
-        json_Listas = json.dumps(rowarray_Listas)
-
-
         sqlTareas = "SELECT in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado <> de_resultado ORDER BY li_orden"
         cursor.execute(sqlTareas)
         rowsTareas = cursor.fetchall()
@@ -250,8 +247,6 @@ def mostrarMalas(request):
         for row in rowsTareas:
             t = (row[0], row[1] , row[2] , row[3] , row[4])
             rowarray_Tareas.append(t)
-
-        json_Tareas = json.dumps(rowarray_Tareas)
 
         data = json.dumps({
         'listas': rowarray_Listas,
@@ -279,9 +274,6 @@ def mostrarBuenas(request):
             t = (row[0], row[1])
             rowarray_Listas.append(t)
 
-        json_Listas = json.dumps(rowarray_Listas)
-
-
         sqlTareas = "SELECT in_id, li_nombre, de_id, de_tarea_nombre, de_observacion FROM te_detalle_inspeccion JOIN te_listas ON li_id = de_id_listas  JOIN te_inspeccion ON de_id_inspeccion=in_id JOIN te_tareas ON ta_id=de_id_tareas WHERE in_fecha='"+fecha+"' AND in_frecuencia='DIARIO' AND ta_resultado_esperado = de_resultado ORDER BY li_orden"
         cursor.execute(sqlTareas)
         rowsTareas = cursor.fetchall()
@@ -290,8 +282,6 @@ def mostrarBuenas(request):
         for row in rowsTareas:
             t = (row[0], row[1] , row[2] , row[3] , row[4])
             rowarray_Tareas.append(t)
-
-        json_Tareas = json.dumps(rowarray_Tareas)
 
         data = json.dumps({
         'listas': rowarray_Listas,
