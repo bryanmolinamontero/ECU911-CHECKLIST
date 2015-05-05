@@ -19,7 +19,6 @@ EMAIL_PORT = 1025 # 587
 EMAIL_USE_TLS = False
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.

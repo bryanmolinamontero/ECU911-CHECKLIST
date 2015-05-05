@@ -127,6 +127,18 @@ def guardarTareaEspecifica(request):
                     guardarDetalleInspeccion.save()
 
                     #guardarAvance en la tabla turno
+
+                    #Obtenemos todas las tareas
+                    contTareas = te_tareas.objects.count()
+                    #porcentaje de cada tarea (regal de 3)
+                    porcTarea = 100/float(contTareas)
+                    porcTarea = round(porcTarea,2)
+                    #contamos los detalles de la fecha que llega a la funcion
+                    registros = te_detalle_inspeccion.objects.filter(de_fecha=fecha).count()
+                    avance = porcTarea * registros
+                    te_turno.objects.filter(tu_fecha_turno=fecha).update(tu_avance=avance)
+
+                    ''' BLOQUE DE CODIGO QUE NO FUNCIONA MUY BIEN
                     obtenerAvance = te_turno.objects.get(tu_fecha_turno=fecha)
                     print obtenerAvance.tu_avance
                     obtenerTareas = te_tareas.objects.count()
@@ -138,6 +150,7 @@ def guardarTareaEspecifica(request):
                     print avanceFinal
                     print "************"
                     te_turno.objects.filter(tu_fecha_turno=fecha).update(tu_avance=avanceFinal)
+                    '''
 
                 else:
                     te_detalle_inspeccion.objects.filter(de_id_inspeccion = idInspeccion, de_id_listas = idLista, de_id_tareas = idTarea,  de_fecha= fecha).update(de_resultado = resultado, de_observacion = observacion)

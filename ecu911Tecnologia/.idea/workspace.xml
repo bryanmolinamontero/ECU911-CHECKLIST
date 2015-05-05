@@ -25,44 +25,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="calendario.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calendario.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/calendario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7914339" vertical-offset="5117" max-vertical-offset="6528">
-              <caret line="326" column="33" selection-start-line="326" selection-start-column="33" selection-end-line="326" selection-end-column="33" />
+            <state vertical-scroll-proportion="-12.269231" vertical-offset="2537" max-vertical-offset="6426">
+              <caret line="168" column="29" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2941">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/checklist/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4282" max-vertical-offset="7650">
-              <caret line="283" column="37" selection-start-line="283" selection-start-column="37" selection-end-line="283" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.4296029" vertical-offset="2108" max-vertical-offset="7871">
+              <caret line="138" column="90" selection-start-line="132" selection-start-column="20" selection-end-line="138" selection-end-column="90" />
               <folding>
                 <element signature="e#50#72#0" expanded="true" />
-                <marker date="1427126718351" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="10926:11177" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="10926:11274" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="12015:12160" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="12457:12804" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="13476:13784" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="13476:13802" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="17062:17189" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="17062:17199" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="17062:17207" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="17375:17521" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="17375:17522" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="18056:18183" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="18056:18202" placeholder="SELECT in_id..te_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="18861:19013" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-                <marker date="1427126718351" expanded="true" signature="18861:19052" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="9916:10170" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="10505:10746" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="10505:10758" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="10505:10787" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="11160:11305" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="11602:11853" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="11602:11950" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="12691:12836" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="13133:13480" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="14152:14460" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="14152:14478" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="17738:17865" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="17738:17875" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="17738:17883" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="18051:18197" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="18051:18198" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="18732:18859" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="18732:18878" placeholder="SELECT in_id..te_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="19537:19689" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+                <marker date="1430797548381" expanded="true" signature="19537:19728" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,18 +90,8 @@
       <file leaf-file-name="reportePorDia.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/reportePorDia.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="527" max-vertical-offset="2414">
-              <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tareaEspecifica.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/tareaEspecifica.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="2839">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="5" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="2397">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,8 +100,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1190">
+              <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -100,7 +110,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="833">
+            <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="833">
               <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
               <folding />
             </state>
@@ -110,8 +120,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checklist/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="913" max-vertical-offset="1751">
-              <caret line="63" column="19" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1751">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,8 +130,8 @@
       <file leaf-file-name="tareas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/tareas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.538462" vertical-offset="3271" max-vertical-offset="3808">
-              <caret line="207" column="42" selection-start-line="207" selection-start-column="42" selection-end-line="207" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3170" max-vertical-offset="3808">
+              <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -138,14 +148,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/checklist/models.py" />
-        <option value="$PROJECT_DIR$/ecu911Tecnologia/settings.py" />
         <option value="$PROJECT_DIR$/templates/correo.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/ecu911Tecnologia/urls.py" />
-        <option value="$PROJECT_DIR$/templates/reportePorDia.html" />
-        <option value="$PROJECT_DIR$/templates/tareaEspecifica.html" />
         <option value="$PROJECT_DIR$/templates/tareas.html" />
+        <option value="$PROJECT_DIR$/templates/reportePorDia.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/tareaEspecifica.html" />
+        <option value="$PROJECT_DIR$/ecu911Tecnologia/settings.py" />
         <option value="$PROJECT_DIR$/checklist/views.py" />
         <option value="$PROJECT_DIR$/templates/calendario.html" />
       </list>
@@ -155,10 +165,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -565,29 +573,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="683" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2143928" sideWeight="0.8062397" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31496063" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.051968504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22547585" sideWeight="0.8062397" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06771654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -617,26 +625,26 @@
           <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427126718351" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11177" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11274" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12015:12160" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12457:12804" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13784" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13802" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17189" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17199" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17207" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17521" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17522" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18183" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18202" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19013" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19052" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="9916:10170" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10746" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10758" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10787" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11160:11305" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11853" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11950" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="12691:12836" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="13133:13480" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14460" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14478" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17865" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17875" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17883" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18197" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18198" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18859" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18878" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19689" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19728" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -686,26 +694,26 @@
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427126718351" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11177" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11274" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12015:12160" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12457:12804" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13784" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13802" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17189" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17199" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17207" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17521" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17522" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18183" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18202" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19013" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19052" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="9916:10170" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10746" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10758" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10787" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11160:11305" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11853" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11950" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="12691:12836" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="13133:13480" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14460" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14478" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17865" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17875" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17883" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18197" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18198" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18859" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18878" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19689" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19728" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -722,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2771">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,26 +778,26 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427126718351" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11177" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11274" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12015:12160" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12457:12804" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13784" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13802" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17189" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17199" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17207" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17521" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17522" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18183" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18202" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19013" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19052" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="9916:10170" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10746" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10758" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10787" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11160:11305" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11853" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11950" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="12691:12836" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="13133:13480" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14460" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14478" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17865" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17875" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17883" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18197" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18198" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18859" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18878" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19689" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19728" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -807,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2771">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,26 +862,26 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427126718351" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11177" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11274" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12015:12160" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12457:12804" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13784" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13802" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17189" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17199" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17207" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17521" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17522" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18183" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18202" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19013" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19052" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="9916:10170" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10746" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10758" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10787" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11160:11305" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11853" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11950" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="12691:12836" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="13133:13480" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14460" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14478" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17865" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17875" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17883" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18197" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18198" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18859" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18878" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19689" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19728" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
         </state>
       </provider>
@@ -892,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2771">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,13 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13783784" vertical-offset="0" max-vertical-offset="370">
           <caret line="3" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14285715" vertical-offset="0" max-vertical-offset="357">
-          <caret line="3" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -982,30 +980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2958">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/correo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4775281" vertical-offset="2601" max-vertical-offset="3162">
           <caret line="163" column="42" selection-start-line="163" selection-start-column="42" selection-end-line="163" selection-end-column="42" />
-          <folding>
-            <element signature="e#795#821#0#HTML" expanded="false" />
-            <element signature="e#2197#2244#0#HTML" expanded="false" />
-            <element signature="e#2395#2448#0#HTML" expanded="false" />
-            <element signature="e#2807#2854#0#HTML" expanded="false" />
-            <element signature="e#2984#3058#0#HTML" expanded="false" />
-            <element signature="e#3362#3388#0#HTML" expanded="false" />
-            <element signature="e#3999#4046#0#HTML" expanded="false" />
-            <element signature="e#4197#4250#0#HTML" expanded="false" />
-            <element signature="e#4591#4638#0#HTML" expanded="false" />
-            <element signature="e#4768#4842#0#HTML" expanded="false" />
-            <element signature="e#5129#5155#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,26 +1001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checklist/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="913" max-vertical-offset="1751">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Iniciar Servicio CHECK LIST.vbs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="477">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,17 +1015,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/reportePorDia.html">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="527" max-vertical-offset="2414">
-          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1190">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="833">
+        <state vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="833">
           <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding />
         </state>
@@ -1071,55 +1033,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tareaEspecifica.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="2839">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="5" selection-end-column="94" />
-          <folding />
+        <state vertical-scroll-proportion="0.9922929" vertical-offset="1321" max-vertical-offset="2839">
+          <caret line="108" column="34" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tareas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.538462" vertical-offset="3271" max-vertical-offset="3808">
-          <caret line="207" column="42" selection-start-line="207" selection-start-column="42" selection-end-line="207" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3170" max-vertical-offset="3808">
+          <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/reportePorDia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2397">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checklist/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1751">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecu911Tecnologia/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2941">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calendario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.269231" vertical-offset="2537" max-vertical-offset="6426">
+          <caret line="168" column="29" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checklist/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4282" max-vertical-offset="7650">
-          <caret line="283" column="37" selection-start-line="283" selection-start-column="37" selection-end-line="283" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.4296029" vertical-offset="2108" max-vertical-offset="7871">
+          <caret line="138" column="90" selection-start-line="132" selection-start-column="20" selection-end-line="138" selection-end-column="90" />
           <folding>
             <element signature="e#50#72#0" expanded="true" />
-            <marker date="1427126718351" expanded="true" signature="9240:9494" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10070" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10082" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="9829:10111" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10484:10629" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11177" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="10926:11274" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12015:12160" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="12457:12804" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13784" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="13476:13802" placeholder="SELECT in_id..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17189" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17199" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17062:17207" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17521" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="17375:17522" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18183" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18056:18202" placeholder="SELECT in_id..te_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19013" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
-            <marker date="1427126718351" expanded="true" signature="18861:19052" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="9916:10170" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10746" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10758" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="10505:10787" placeholder="SELECT SUM(t..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11160:11305" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11853" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="11602:11950" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="12691:12836" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="13133:13480" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14460" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="14152:14478" placeholder="SELECT in_id..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17865" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17875" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="17738:17883" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18197" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18051:18198" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18859" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="18732:18878" placeholder="SELECT in_id..te_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19689" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
+            <marker date="1430797548381" expanded="true" signature="19537:19728" placeholder="SELECT de_ta..te_detalle_inspeccion..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calendario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7914339" vertical-offset="5117" max-vertical-offset="6528">
-          <caret line="326" column="33" selection-start-line="326" selection-start-column="33" selection-end-line="326" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>

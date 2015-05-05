@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block head %}
     <!-- DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
@@ -46,7 +44,6 @@
                     <th style="width:20px">  <span class="glyphicon glyphicon-remove" style="color: red;margin: 0px;padding: 0px;" aria-hidden="true"></span></th>
                     <th style="width:20px">  <span class="glyphicon glyphicon-ok" style="color: #08F72A;margin: 0px;padding: 0px;" aria-hidden="true"></span></th>
                     <th style="width:20px">  <span class="glyphicon glyphicon-print" style="color: white;margin: 0px;padding: 0px;" aria-hidden="true"></span></th>
-
                     </thead>
                     <tbody>
                     {% for i in registrosTurno %}
@@ -55,7 +52,7 @@
                                 <td class="diaActual">{{i.tu_nombre_usuario}}</td>
                                 <td class="diaActual">{{i.tu_fecha_turno }} </td>
                                 <td class="diaActual">{{i.tu_dia}}</td>
-                                {% if i.tu_avance > 99 %}
+                                {% if i.tu_avance > 99.36 %}
                                     <td class="diaActual">
                                         <div class="progress" style="margin-bottom: 0px;padding-bottom: 0px;">
                                             <div class="progress-bar progress-bar-success" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 100%; color: #000000; font-size: 14px;">
@@ -76,13 +73,11 @@
                                 <td class="diaActual" style="text-align: center"; id="buena_{{ i.tu_fecha_turno | safe }}">---</td>
                                 <td class="diaActual" style="text-align: center"; id="reporte_{{ i.tu_fecha_turno | safe  }}">---</td>
 
-
-
                             {% else %}
                                 <td>{{i.tu_nombre_usuario}}</td>
                                 <td>{{i.tu_fecha_turno  }}</td>
                                 <td>{{i.tu_dia}}</td>
-                                {% if i.tu_avance > 99 %}
+                                {% if i.tu_avance > 99.36 %}
                                     <td>
                                         <div class="progress" style="margin-bottom: 0px;padding-bottom: 0px;">
                                             <div class="progress-bar progress-bar-success" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 100%; color: #000000; font-size: 14px;">
@@ -317,7 +312,6 @@
                                 if(data.listas[i][0] == data.tareas[j][0])
                                     flag = true;
                             }//fin del for J
-
                             if (flag == true){
                                 contenido = '<h4>' + data.listas[i][1] + '</h4>';
                                 contenido = contenido + ' <div class="table-responsive">' +
@@ -363,7 +357,7 @@
                             var estado = data;
                             var a = estado.split("'");
                             try {
-                                document.getElementById("reporte_"+'{{ foo.tu_fecha_turno | safe}}').innerHTML='<a target="_blank" href="/reportePorDia/{{ foo.tu_fecha_turno | safe}}" ><span class="glyphicon glyphicon-print" style="color: darkgray;margin: 0px;padding: 0px;" aria-hidden="true"></span></a>';
+                                document.getElementById("reporte_"+'{{ foo.tu_fecha_turno | safe}}').innerHTML='<a target="_blank" href="/reportePorDia/{{ foo.tu_fecha_turno | safe}}" ><span class="glyphicon glyphicon-view" style="color: darkgray;margin: 0px;padding: 0px;" aria-hidden="true"></span></a>';
                             }
                             catch(err) {
                             }
